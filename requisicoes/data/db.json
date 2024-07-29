@@ -1,0 +1,45 @@
+{   
+  "games" : [
+      {
+        "id": 1,
+        "title": "Cyberpunk 2077",
+        "genre": "RPG",
+        "price": 59.99,
+        "releaseDate": "2020-12-10",
+        "developer": "CD Projekt Red"
+      },
+      {
+        "id": 2,
+        "title": "The Witcher 3: Wild Hunt",
+        "genre": "RPG",
+        "price": 39.99,
+        "releaseDate": "2015-05-18",
+        "developer": "CD Projekt Red"
+      },
+      {
+        "id": 3,
+        "title": "DOOM Eternal",
+        "genre": "Action",
+        "price": 49.99,
+        "releaseDate": "2020-03-20",
+        "developer": "id Software"
+      },
+      {
+        "id": 4,
+        "title": "Hades",
+        "genre": "Roguelike",
+        "price": 24.99,
+        "releaseDate": "2020-09-17",
+        "developer": "Supergiant Games"
+      },
+      {
+        "id": 5,
+        "title": "Among Us",
+        "genre": "Party",
+        "price": 4.99,
+        "releaseDate": "2018-11-16",
+        "developer": "Innersloth"
+      }
+    ]
+  }
+  
