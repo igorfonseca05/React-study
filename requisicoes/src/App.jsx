@@ -6,18 +6,21 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
-  const {data, setData} = useState('')
+  const [data, setData] = useState([])
 
   useEffect(() => {
    async function getData(){
       try {
-        const dados = await fetch("http://localhost:3000/games")
+        const response = await fetch("http://localhost:3000/games")
         
-        if(!dados.ok) {
+        if(!response.ok) {
           throw new Error('Não foi possivel obter dados')
         }
         
-        console.log(await dados.json())
+        const dados = await response.json()
+
+        setData(dados)
+        console.log(dados)
         // toast.success('dados obtidos com sucesso')
         
       } catch (error) {
@@ -29,12 +32,21 @@ function App() {
     getData()
   },[])
 
+  // console.(data)
+
   return (
     <div className="App">
       <header className="App-header">
         <h1>Bem-vindo ao Meu Projeto React</h1>
         <p>Esta é uma página inicial simples para começar a trabalhar com requisições em React.</p>
-        <button>Fazer Requisição</button>
+        <h4>Os dados obtidos foram</h4>
+        <ul>
+          {
+            data?.map((game) => (
+              <li key={game.id}>{game.title}</li>
+            ))
+          }
+        </ul>
         <ToastContainer />
       </header>
     </div>
