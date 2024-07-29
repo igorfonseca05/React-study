@@ -14,6 +14,24 @@ function App() {
   const [releaseDate, setReleaseData] = useState('')
   const [developer, setDeveloper] = useState('')
 
+  const [newGame, setNewGame] = useState({
+    title: '',
+    genre: '',
+    price: '',
+    releaseDate: '',
+    developer: ''
+  });
+
+  function handleChanges(e) {
+    
+    const {name, value} = e.target
+
+      setNewGame({
+        ...newGame,
+        [name]: value
+      })
+  }
+
   useEffect(() => {
     async function getData() {
       try {
@@ -26,7 +44,7 @@ function App() {
         const dados = await response.json()
 
         setData(dados)
-        console.log(dados)
+        // console.log(dados)
         // toast.success('dados obtidos com sucesso')
 
       } catch (error) {
@@ -41,14 +59,46 @@ function App() {
   function handleForm (e) {
       e.preventDefault()
 
-      console.log(title, price, releaseDate, developer, genre)
+      const game = {
+        developer,
+        genre,
+        price,
+        releaseDate,
+        title
+      }
 
+      useEffect(() => {
+        async function postData() {
+          try {
+            const postedData = await fetch('http://localhost:3000/games', {
+              method: 'POST',
+              headers: {
+                'Content-type': 'Application/json',
+                'Accept': 'application/json'
+              },
+              body: JSON.stringify(game)
+
+            
+            })
+
+            if (!postedData.ok) {
+              throw new Error('Não foi possivel adicionar dados')
+            }
+
+            toast.success('dados adicionados com sucesso')
+
+            console.log(postedData)
+    
+          } catch (error) {
+            toast.error(error.message)
+            console.log(error)
+          }
+        }
+
+        postData()
+      }, [])
 
   }
-
-
-
-  // console.(data)
 
   return (
     <div className='grid-container'>
@@ -64,7 +114,7 @@ function App() {
             name="title"
             placeholder="Título"
             value={title}
-            onChange={(e)=> setTitle(e.target.value)}
+            onChange={handleChanges}
             required
           />
           <input
@@ -72,7 +122,7 @@ function App() {
             name="genre"
             placeholder="Gênero"
             value={genre}
-            onChange={(e)=> setGenre(e.target.value)}
+            onChange={handleChanges}
             required
           />
           <input
@@ -80,7 +130,7 @@ function App() {
             name="price"
             placeholder="Preço"
             value={price}
-            onChange={(e)=> setPrice(e.target.value)}
+            onChange={handleChanges}
             required
           />
           <input
@@ -88,7 +138,7 @@ function App() {
             name="releaseDate"
             placeholder="Data de Lançamento"
             value={releaseDate}
-            onChange={(e) => setReleaseData(e.target.value)}
+            onChange={handleChanges}
             required
           />
           <input
@@ -96,7 +146,7 @@ function App() {
             name="developer"
             placeholder="Desenvolvedor"
             value={developer}
-            onChange={(e) => setDeveloper(e.target.value)}
+            onChange={handleChanges}
             required
           />
           <button type="submit">Adicionar Jogo</button>
