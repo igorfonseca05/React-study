@@ -14,22 +14,44 @@ function App() {
   const [releaseDate, setReleaseData] = useState('')
   const [developer, setDeveloper] = useState('')
 
-  const [newGame, setNewGame] = useState({
-    title: '',
-    genre: '',
-    price: '',
-    releaseDate: '',
-    developer: ''
-  });
 
-  function handleChanges(e) {
-    
-    const {name, value} = e.target
+  async function handleForm(e) {
+    e.preventDefault()
 
-      setNewGame({
-        ...newGame,
-        [name]: value
-      })
+    const game = {
+      title,
+      genre,
+      price,
+      releaseDate,
+      developer
+    }
+
+    console.log(game)
+
+    // try {
+    //   const postedData = await fetch('http://localhost:3000/games', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-type': 'Application/json',
+    //       'Accept': 'application/json'
+    //     },
+    //     body: JSON.stringify(newGame)
+
+
+    //   })
+
+    //   if (!postedData.ok) {
+    //     throw new Error('Não foi possivel adicionar dados')
+    //   }
+
+    //   toast.success('dados adicionados com sucesso')
+
+    //   console.log(postedData)
+
+    // } catch (error) {
+    //   toast.error(error.message)
+    //   console.log(error)
+    // }
   }
 
   useEffect(() => {
@@ -57,47 +79,9 @@ function App() {
   }, [])
 
 
-  async function handleForm (e) {
-    e.preventDefault()
-
-    const game = {
-      developer,
-      genre,
-      price,
-      releaseDate,
-      title
-    }
-
-    try {
-      const postedData = await fetch('http://localhost:3000/games', {
-        method: 'POST',
-        headers: {
-          'Content-type': 'Application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify(game)
-
-      
-      })
-
-      if (!postedData.ok) {
-        throw new Error('Não foi possivel adicionar dados')
-      }
-
-      toast.success('dados adicionados com sucesso')
-
-      console.log(postedData)
-
-    } catch (error) {
-      toast.error(error.message)
-      console.log(error)
-    }
-  }
-
-
   return (
     <div className='grid-container'>
-       <header className="App-header">
+      <header className="App-header">
         <h1>Bem-vindo ao Meu Projeto React</h1>
         <p>Esta é uma página inicial simples para começar a trabalhar com requisições em React.</p>
       </header>
@@ -109,7 +93,7 @@ function App() {
             name="title"
             placeholder="Título"
             value={title}
-            onChange={handleChanges}
+            onInput={(e)=> setTitle(e.target.value)}
             required
           />
           <input
@@ -117,7 +101,7 @@ function App() {
             name="genre"
             placeholder="Gênero"
             value={genre}
-            onChange={handleChanges}
+            onInput={(e)=> setGenre(e.target.value)}
             required
           />
           <input
@@ -125,7 +109,7 @@ function App() {
             name="price"
             placeholder="Preço"
             value={price}
-            onChange={handleChanges}
+            onInput={(e)=> setPrice(e.target.value)}
             required
           />
           <input
@@ -133,7 +117,7 @@ function App() {
             name="releaseDate"
             placeholder="Data de Lançamento"
             value={releaseDate}
-            onChange={handleChanges}
+            onInput={(e)=> setReleaseData(e.target.value)}
             required
           />
           <input
@@ -141,7 +125,7 @@ function App() {
             name="developer"
             placeholder="Desenvolvedor"
             value={developer}
-            onChange={handleChanges}
+            onInput={(e)=> setDeveloper(e.target.value)}
             required
           />
           <button type="submit">Adicionar Jogo</button>
@@ -150,8 +134,8 @@ function App() {
       <div>
         <h2 className='result'>Dados obtidos: </h2>
         <ul>
-          {data?.map((game)=> (
-             <li key={game.id}>{game.title}</li>
+          {data?.map((game) => (
+            <li key={game.id}>{game.title}</li>
           ))}
         </ul>
       </div>
