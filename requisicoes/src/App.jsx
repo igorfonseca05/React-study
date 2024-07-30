@@ -110,10 +110,8 @@ function App() {
 
   }
 
-  async function handleDelete(e) {
-    if(e.target.tagName === 'SPAN') {
-      console.log(e.currentTarget.getAttribute("key"))
-    }
+  async function handleDelete(id) {
+    console.log(id)
   }
 
   return (
@@ -126,9 +124,9 @@ function App() {
         <h2 className='result'>Dados obtidos: </h2>
         <ul className='dataContainer'>
           {data?.map((game) => (
-            <li onClick={handleDelete} key={game.id}>
+            <li key={game.id}>
               <p>{game.title}</p>
-              <span className="material-symbols-outlined">
+              <span onClick={(e) => handleDelete(game.id)} className="material-symbols-outlined">
                 delete
               </span>
             </li>
