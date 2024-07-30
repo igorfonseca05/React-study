@@ -56,49 +56,44 @@ function App() {
     getData()
   }, [])
 
-  function handleForm (e) {
-      e.preventDefault()
 
-      const game = {
-        developer,
-        genre,
-        price,
-        releaseDate,
-        title
+  async function handleForm (e) {
+    e.preventDefault()
+
+    const game = {
+      developer,
+      genre,
+      price,
+      releaseDate,
+      title
+    }
+
+    try {
+      const postedData = await fetch('http://localhost:3000/games', {
+        method: 'POST',
+        headers: {
+          'Content-type': 'Application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(game)
+
+      
+      })
+
+      if (!postedData.ok) {
+        throw new Error('Não foi possivel adicionar dados')
       }
 
-      useEffect(() => {
-        async function postData() {
-          try {
-            const postedData = await fetch('http://localhost:3000/games', {
-              method: 'POST',
-              headers: {
-                'Content-type': 'Application/json',
-                'Accept': 'application/json'
-              },
-              body: JSON.stringify(game)
+      toast.success('dados adicionados com sucesso')
 
-            
-            })
+      console.log(postedData)
 
-            if (!postedData.ok) {
-              throw new Error('Não foi possivel adicionar dados')
-            }
-
-            toast.success('dados adicionados com sucesso')
-
-            console.log(postedData)
-    
-          } catch (error) {
-            toast.error(error.message)
-            console.log(error)
-          }
-        }
-
-        postData()
-      }, [])
-
+    } catch (error) {
+      toast.error(error.message)
+      console.log(error)
+    }
   }
+
 
   return (
     <div className='grid-container'>
