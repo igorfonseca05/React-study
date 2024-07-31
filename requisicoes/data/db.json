@@ -47,14 +47,6 @@
       "releaseDate": "2006-02-15",
       "developer": "Electronics Arts",
       "id": 6
-    },
-    {
-      "title": "Resident evil",
-      "genre": "horror",
-      "price": "321.00",
-      "releaseDate": "2011-07-15",
-      "developer": "Electronics Arts",
-      "id": 7
     }
   ]
 }

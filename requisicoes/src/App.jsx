@@ -111,7 +111,22 @@ function App() {
   }
 
   async function handleDelete(id) {
-    console.log(id)
+    try {
+        const res = await fetch(`http://localhost:3000/games/${id}`, {
+        method: 'DELETE',
+        headers: {
+          'Content-type': "application/json"
+        }
+      })
+
+      if(!res.ok) {
+        throw new Error('Dado não removido')
+      }
+
+      toast.success('Dado removido')
+    } catch (error) {
+      toast.error(error.message)
+    }
   }
 
   return (
