@@ -14,6 +14,8 @@ function App() {
   const [releaseDate, setReleaseData] = useState('')
   const [developer, setDeveloper] = useState('')
 
+  const [removedData, setRemovedData] = useState('')
+
 
   // async function handleForm(e) {
   //   e.preventDefault()
@@ -66,7 +68,7 @@ function App() {
     }
 
     getData()
-  }, [])
+  }, [removedData])
 
   async function handleForm(e) {
     e.preventDefault()
@@ -124,6 +126,12 @@ function App() {
       }
 
       toast.success('Dado removido')
+      setRemovedData(await res.json())
+
+      // Adicionando busca dinamica
+
+      
+
     } catch (error) {
       toast.error(error.message)
     }
