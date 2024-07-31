@@ -1,8 +1,10 @@
 
-import { useEffect, useState } from 'react'
+import { useEffect, useReducer, useState } from 'react'
 import './App.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+import { useFetch } from './hooks/useFetch';
 
 function App() {
 
@@ -16,59 +18,43 @@ function App() {
 
   const [removedData, setRemovedData] = useState('')
 
+  const url = 'http://localhost:3000/games'
 
-  // async function handleForm(e) {
-  //   e.preventDefault()
+  const {data: myData} = useFetch(url)
 
-  //   const game = {
-  //     title,
-  //     genre,
-  //     price,
-  //     releaseDate,
-  //     developer
-  //   }
+  useEffect(() => {
+    setData(myData)
 
-  //   try {
+  }, [myData])
 
-  //     const postedData = await fetch('http://localhost:3000/games', {
-  //       method: 'POST', 
-  //       headers: {
-  //         'Content-type': 'application/json',
-  //         'Accept': 'application/json'
-  //       },
-  //       body: JSON.stringify(game)
-  //     })
-
-  //   } catch (error) {
-  //     toast.error('Não foi possivel adicionar o dado')
-  //   }
+  // console.log(myData)
 
 
   // }
 
-  useEffect(() => {
-    async function getData() {
-      try {
-        const response = await fetch("http://localhost:3000/games")
+  // useEffect(() => {
+  //   async function getData() {
+  //     try {
+  //       const response = await fetch("http://localhost:3000/games")
 
-        if (!response.ok) {
-          throw new Error('Não foi possivel obter dados')
-        }
+  //       if (!response.ok) {
+  //         throw new Error('Não foi possivel obter dados')
+  //       }
 
-        const dados = await response.json()
+  //       const dados = await response.json()
 
-        setData(dados)
-        // console.log(dados)
-        // toast.success('dados obtidos com sucesso')
+  //       setData(dados)
+  //       // console.log(dados)
+  //       // toast.success('dados obtidos com sucesso')
 
-      } catch (error) {
-        toast.error(error.message)
-        // console.log(error)
-      }
-    }
+  //     } catch (error) {
+  //       toast.error(error.message)
+  //       // console.log(error)
+  //     }
+  //   }
 
-    getData()
-  }, [removedData])
+  //   getData()
+  // }, [removedData])
 
   async function handleForm(e) {
     e.preventDefault()
@@ -127,10 +113,6 @@ function App() {
 
       toast.success('Dado removido')
       setRemovedData(await res.json())
-
-      // Adicionando busca dinamica
-
-      
 
     } catch (error) {
       toast.error(error.message)
