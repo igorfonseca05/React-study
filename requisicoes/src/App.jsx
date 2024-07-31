@@ -27,34 +27,6 @@ function App() {
 
   }, [myData])
 
-  // console.log(myData)
-
-
-  // }
-
-  // useEffect(() => {
-  //   async function getData() {
-  //     try {
-  //       const response = await fetch("http://localhost:3000/games")
-
-  //       if (!response.ok) {
-  //         throw new Error('Não foi possivel obter dados')
-  //       }
-
-  //       const dados = await response.json()
-
-  //       setData(dados)
-  //       // console.log(dados)
-  //       // toast.success('dados obtidos com sucesso')
-
-  //     } catch (error) {
-  //       toast.error(error.message)
-  //       // console.log(error)
-  //     }
-  //   }
-
-  //   getData()
-  // }, [removedData])
 
   async function handleForm(e) {
     e.preventDefault()
@@ -98,26 +70,26 @@ function App() {
 
   }
 
-  async function handleDelete(id) {
-    try {
-        const res = await fetch(`http://localhost:3000/games/${id}`, {
-        method: 'DELETE',
-        headers: {
-          'Content-type': "application/json"
-        }
-      })
+  // async function handleDelete(id) {
+  //   try {
+  //       const res = await fetch(`http://localhost:3000/games/${id}`, {
+  //       method: 'DELETE',
+  //       headers: {
+  //         'Content-type': "application/json"
+  //       }
+  //     })
 
-      if(!res.ok) {
-        throw new Error('Dado não removido')
-      }
+  //     if(!res.ok) {
+  //       throw new Error('Dado não removido')
+  //     }
 
-      toast.success('Dado removido')
-      setRemovedData(await res.json())
+  //     toast.success('Dado removido')
+  //     setRemovedData(await res.json())
 
-    } catch (error) {
-      toast.error(error.message)
-    }
-  }
+  //   } catch (error) {
+  //     toast.error(error.message)
+  //   }
+  // }
 
   return (
     <div className='grid-container'>
@@ -131,9 +103,9 @@ function App() {
           {data?.map((game) => (
             <li key={game.id}>
               <p>{game.title}</p>
-              <span onClick={(e) => handleDelete(game.id)} className="material-symbols-outlined">
+              {/* <span onClick={(e) => handleDelete(game.id)} className="material-symbols-outlined">
                 delete
-              </span>
+              </span> */}
             </li>
           ))}
         </ul>

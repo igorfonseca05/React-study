@@ -3,16 +3,17 @@ import { toast } from "react-toastify";
 
 
 // Custom hook
-export function useFetch (url) {
+export function useFetch(url) {
 
     const [data, setData] = useState(null)
 
     useEffect(() => {
+
         async function getData() {
             try {
                 const response = await fetch(url)
 
-                if(!response.ok) {
+                if (!response.ok) {
                     throw new Error('Não foi possivel obter os dados')
                 }
 
@@ -27,6 +28,9 @@ export function useFetch (url) {
 
     }, [url])
 
-    return {data}
- 
+
+    // Refatorando o metodo post
+
+    return { data }
+
 }
