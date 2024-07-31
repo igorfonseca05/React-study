@@ -39,6 +39,22 @@
       "price": 4.99,
       "releaseDate": "2018-11-16",
       "developer": "Innersloth"
+    },
+    {
+      "title": "The sims",
+      "genre": "Real life",
+      "price": "151",
+      "releaseDate": "2005-04-15",
+      "developer": "Electronics Arts",
+      "id": 6
+    },
+    {
+      "title": "The sims",
+      "genre": "Real life",
+      "price": "151",
+      "releaseDate": "2005-04-15",
+      "developer": "Electronics Arts",
+      "id": 7
     }
   ]
 }

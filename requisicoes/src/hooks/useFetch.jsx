@@ -16,6 +16,26 @@ export function useFetch(url) {
     const [config, setConfig] = useState(null)
 
 
+    function httpConfig (postedData, method) {
+        if(method === 'POST') {
+
+            const config = {
+                method,
+                headers: {
+                    'Content-type': 'Application/json',
+                    'Accept' : 'Application/json'
+                },
+                body: JSON.stringify(postedData)
+
+            }
+
+            setConfig(config)
+        }
+
+
+        setMethod(method)
+    }
+
     useEffect(() => {
 
         async function getData() {
@@ -65,9 +85,10 @@ export function useFetch(url) {
        }
 
        postData()
+       
     }, [config])
 
 
-    return { data }
+    return { data, httpConfig }
 
 }

@@ -20,7 +20,7 @@ function App() {
 
   const url = 'http://localhost:3000/games'
 
-  const {data: myData} = useFetch(url)
+  const {data: myData, httpConfig} = useFetch(url)
 
   useEffect(() => {
     setData(myData)
@@ -39,34 +39,37 @@ function App() {
       developer
     }
 
-    try {
+    httpConfig(gameToBeAdded, 'POST')
+    
 
-      const res = await fetch('http://localhost:3000/games', {
-        method: 'POST',
-        headers: {
-          'Content-type': 'application/json',
-          "Accept": "application/json"
-        },
-        body: JSON.stringify(gameToBeAdded)
-      })
+    // try {
 
-
-      if (!res.ok) {
-        throw new Error('Erro ao adicionar dado')
-      }
-
-      // Adicionando carregamento dinâmico do dado
-      const dataAdded = await res.json()
-      setData((previousState) => [...previousState, dataAdded])
-
-      toast.success('Dado adicionado com sucesso')
+    //   const res = await fetch('http://localhost:3000/games', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-type': 'application/json',
+    //       "Accept": "application/json"
+    //     },
+    //     body: JSON.stringify(gameToBeAdded)
+    //   })
 
 
-    } catch (error) {
-      console.log(error)
+    //   if (!res.ok) {
+    //     throw new Error('Erro ao adicionar dado')
+    //   }
 
-      toast.error(error.message)
-    }
+    //   // Adicionando carregamento dinâmico do dado
+    //   const dataAdded = await res.json()
+    //   setData((previousState) => [...previousState, dataAdded])
+
+    //   toast.success('Dado adicionado com sucesso')
+
+
+    // } catch (error) {
+    //   console.log(error)
+
+    //   toast.error(error.message)
+    // }
 
   }
 
