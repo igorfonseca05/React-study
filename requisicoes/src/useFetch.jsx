@@ -12,6 +12,28 @@ export function fetchData (endPoint) {
     const [config, setConfig] = useState(null)
 
 
+
+    function httpConfig (data, method) {
+
+        if(method === 'POST') {
+
+            const config = {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'Application/json',
+                    'Accept': 'Application/json'
+                },
+                body: JSON.stringify(data)
+            }
+
+            setConfig(config)
+        }
+
+        setMethod(method)
+        
+    }
+
+
     // this is the basic architecture of get data from an API using react
     useEffect(() => {
 
@@ -56,7 +78,8 @@ export function fetchData (endPoint) {
                     }
 
                     setLoading(false)
-                    setData(await res.json())                    
+                    // setData(await res.json())   
+                    callFetch(await res.json())                 
 
                 } catch (error) {
                     setError(error.message)
@@ -69,6 +92,9 @@ export function fetchData (endPoint) {
 
         postData()
     }, [config])
-    
+
+
+    return {data, httpConfig}
 
 }
+
