@@ -7,7 +7,6 @@ export function useFetch(url) {
 
     const [data, setData] = useState(null)
 
-    
     // Refatorando o metodo post
 
     // As variaves abaixo serão usadas para podermos refatorar o fetch
