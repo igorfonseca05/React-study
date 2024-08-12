@@ -15,13 +15,16 @@ export function fetchData(url) {
         if(method === 'POST') {
 
             setConfig({
-                method : 'POST',
+                method,
                 headers : {
                     "Content-type" : 'Application/json'
                 },
                 body: JSON.stringify(data)
             })
+
         }
+
+        setMethod(method)
     }
 
     useEffect(() => {
@@ -78,6 +81,6 @@ export function fetchData(url) {
     }, [config])
     
 
-    return {data}
+    return {data, httpConfig}
 
 }
