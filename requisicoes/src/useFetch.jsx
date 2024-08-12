@@ -1,100 +1,83 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 
-export function fetchData (endPoint) {
+export function fetchData(url) {
 
-    const [data, setData] = useState('')
-    const [loading, setLoading] = useState(false)
-    const [error, setError] = useState('')
+    const [data, setData] = useState(null)
 
-    // This variable is used with the data post function
+
     const [method, setMethod] = useState(null)
     const [callFetch, setCallFetch] = useState(null)
     const [config, setConfig] = useState(null)
 
 
-
     function httpConfig (data, method) {
-
         if(method === 'POST') {
 
-            const config = {
-                method: 'POST',
-                headers: {
-                    'Content-type': 'Application/json',
-                    'Accept': 'Application/json'
+            setConfig({
+                method : 'POST',
+                headers : {
+                    "Content-type" : 'Application/json'
                 },
                 body: JSON.stringify(data)
-            }
-
-            setConfig(config)
+            })
         }
-
-        setMethod(method)
-        
     }
 
-
-    // this is the basic architecture of get data from an API using react
     useEffect(() => {
 
-        setLoading(true)
-
         async function getData() {
-            try {    
-                const res = await fetchData(url)
+            try {
+                
+                const res = await fetch(url)
 
                 if(!res.ok) {
-                    throw new Error('Não foi possivel obter os dados')
+                    throw new Error('Não foi possivel recuperar os dados')
                 }
 
-                setLoading(false)
-                return setData(await res.json())
-                
-    
+                setData(await res.json())
+
             } catch (error) {
-                console.log(error.message)
-                setError(error.message)
+                toast.error(error.message)
+                console.log(error)
             }
         }
 
         getData()
-    }, [url ,callFetch])
 
+    }, [url, callFetch])
+
+
+    //Now, i'm going to implement the post method in my application
 
     useEffect(() => {
-
-        setLoading(true)
-
-        async function postData() {
+         async function postData() {
             if(method === 'POST') {
 
                 const fetchConfig = [url, config]
 
                 try {
+                
                     const res = await fetch(...fetchConfig)
-
+    
                     if(!res.ok) {
-                        throw new Error('something went wrong to post data')
+                        throw new Error('Não foi possivel postar os dados')
                     }
-
-                    setLoading(false)
-                    // setData(await res.json())   
-                    callFetch(await res.json())                 
-
+    
+                    setCallFetch(await res.json())
+    
                 } catch (error) {
-                    setError(error.message)
-                    console.log(error.message)
+                    toast.error(error.message)
+                    console.log(error)
                 }
 
-            }
+            } 
+         }
 
-        }
-
-        postData()
+         postData()
     }, [config])
+    
 
-
-    return {data, httpConfig}
+    return {data}
 
 }
-
