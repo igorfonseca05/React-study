@@ -1,0 +1,97 @@
+{
+  "loja": {
+    "nome": "Minha Loja Online",
+    "produtos": [
+      {
+        "id": 1,
+        "nome": "Mouse Sem Fio",
+        "descricao": "Mouse ergonômico sem fio com sensibilidade de 1600 DPI.",
+        "preco": 25.99,
+        "categoria": "Eletrônicos",
+        "quantidade_estoque": 150,
+        "url_imagem": "https://exemplo.com/imagens/mouse_sem_fio.jpg"
+      },
+      {
+        "id": 2,
+        "nome": "Fones de Ouvido Bluetooth",
+        "descricao": "Fones de ouvido com cancelamento de ruído e Bluetooth 5.0.",
+        "preco": 89.99,
+        "categoria": "Eletrônicos",
+        "quantidade_estoque": 85,
+        "url_imagem": "https://exemplo.com/imagens/fones_bluetooth.jpg"
+      },
+      {
+        "id": 3,
+        "nome": "Suporte para Smartphone",
+        "descricao": "Suporte ajustável para smartphone, ideal para mesa ou bancada.",
+        "preco": 12.49,
+        "categoria": "Acessórios",
+        "quantidade_estoque": 200,
+        "url_imagem": "https://exemplo.com/imagens/suporte_smartphone.jpg"
+      },
+      {
+        "id": 4,
+        "nome": "Carregador USB-C",
+        "descricao": "Carregador rápido USB-C com potência de 18W.",
+        "preco": 19.99,
+        "categoria": "Eletrônicos",
+        "quantidade_estoque": 120,
+        "url_imagem": "https://exemplo.com/imagens/carregador_usb_c.jpg"
+      },
+      {
+        "id": 5,
+        "nome": "Capa para Laptop",
+        "descricao": "Capa para laptop de 15 polegadas, resistente à água e feita de neoprene.",
+        "preco": 29.99,
+        "categoria": "Acessórios",
+        "quantidade_estoque": 75,
+        "url_imagem": "https://exemplo.com/imagens/capa_laptop.jpg"
+      },
+      {
+        "id": 6,
+        "nome": "Teclado Mecânico",
+        "descricao": "Teclado mecânico com iluminação RGB e switches azuis.",
+        "preco": 69.99,
+        "categoria": "Eletrônicos",
+        "quantidade_estoque": 45,
+        "url_imagem": "https://exemplo.com/imagens/teclado_mecanico.jpg"
+      },
+      {
+        "id": 7,
+        "nome": "Mouse Pad Gamer",
+        "descricao": "Mouse pad gamer grande com base emborrachada antiderrapante.",
+        "preco": 14.99,
+        "categoria": "Acessórios",
+        "quantidade_estoque": 130,
+        "url_imagem": "https://exemplo.com/imagens/mouse_pad_gamer.jpg"
+      },
+      {
+        "id": 8,
+        "nome": "Fones de Ouvido Sem Fio",
+        "descricao": "Fones de ouvido sem fio compactos com estojo de carregamento.",
+        "preco": 59.99,
+        "categoria": "Eletrônicos",
+        "quantidade_estoque": 90,
+        "url_imagem": "https://exemplo.com/imagens/fones_sem_fio.jpg"
+      },
+      {
+        "id": 9,
+        "nome": "Power Bank Portátil",
+        "descricao": "Power bank portátil de 10000mAh com portas USB-C e USB-A.",
+        "preco": 39.99,
+        "categoria": "Eletrônicos",
+        "quantidade_estoque": 110,
+        "url_imagem": "https://exemplo.com/imagens/power_bank_portatil.jpg"
+      },
+      {
+        "id": 10,
+        "nome": "Câmera de Ação 4K",
+        "descricao": "Câmera de ação 4K à prova d'água com Wi-Fi e lente grande angular de 170°.",
+        "preco": 149.99,
+        "categoria": "Eletrônicos",
+        "quantidade_estoque": 30,
+        "url_imagem": "https://exemplo.com/imagens/camera_acao_4k.jpg"
+      }
+    ]
+  }
+}
