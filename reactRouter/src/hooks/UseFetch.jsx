@@ -7,6 +7,7 @@ export function useFetch(url) {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
 
+
     useEffect(() => {
         async function getData () {
             setLoading(true)

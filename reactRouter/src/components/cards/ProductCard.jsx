@@ -16,9 +16,9 @@ const ProductCard = ({ product }) => {
   }
 
   return (
-    <Link to={`/produtos/${product.id}`} className="card">
+    <Link to={`/produtos/${product.id}`} className="card" >
       <img src={product.url_imagem} alt={product.nome} />
-      <div className="card-body" title={product.name}>
+      <div className="card-body" title={product.nome}>
         <h3 className="card-title">{product.nome}</h3>
         <p className="card-description">{product.descricao}</p>
         <p className="card-price">R$ {product.preco.toFixed(2)}</p>

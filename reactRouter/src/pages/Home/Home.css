@@ -1,11 +1,124 @@
+
+.home {
+    background-color: #f4f4f4 !important;
+}
+
+.products-section{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
 .products-container {
-    max-width: 90%;
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin: 0 auto;
     transition: all 0.1s ease-in-out;
     /* place-items: center; */
+    /* background-color: violet; */
 }
+
+/* Estilo para a seção de cabeçalho da home */
+.home-header {
+    /* max-width: 99%; */
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    /* background-color: #ee1616; */
+    /* border-radius: px; */
+    /* margin-bottom: 30px; */
+    background-image: url("https://images.unsplash.com/photo-1608286022625-bc07f7a21154?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    /* filter: blur(1px); */
+}
+
+
+.home-banner {
+    text-align: center;
+    max-width: 800px;
+    /* margin: 50px; */
+}
+
+.home-banner h1 {
+    font-size: 3em;
+    color: #F2F2F0;
+    margin-bottom: 20px;
+}
+
+.home-banner p {
+    font-size: 1.2em;
+    color:#F2F2F0;
+    margin-bottom: 30px;
+}
+
+.shop-now-button {
+    background-color: #fc685a;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now-button:hover {
+    background-color: #fd4a3a;
+}
+
+.highlights-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+.highlight-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.highlight-card h2 {
+    color: #465952;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.highlight-card p {
+    color: #666666;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.highlight-card button {
+    background-color: #465952;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.highlight-card button:hover {
+    background-color: #364843;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
 
 @media (max-width: 375px) {
     .products-container {

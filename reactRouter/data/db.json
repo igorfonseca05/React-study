@@ -1,94 +1,211 @@
 {
-    "produtos": [
-      {
-        "id": 1,
-        "nome": "Mouse Sem Fio",
-        "descricao": "Mouse ergonômico sem fio com sensibilidade de 1600 DPI.",
-        "preco": 25.99,
-        "categoria": "Eletrônicos",
-        "quantidade_estoque": 150,
-        "url_imagem": "https://a-static.mlcdn.com.br/350x350/mouse-sem-fio-silencioso-com-led-bluetooth-usb-notebook-pc-tablet-kiddo-store/kiddostore-br/mourbpt-1/3ed308c401096f71b44bae27119f2a3b.jpeg"
-      },
-      {
-        "id": 2,
-        "nome": "Fones de Ouvido Bluetooth",
-        "descricao": "Fones de ouvido com cancelamento de ruído e Bluetooth 5.0.",
-        "preco": 89.99,
-        "categoria": "Eletrônicos",
-        "quantidade_estoque": 85,
-        "url_imagem": "https://cdn.leroymerlin.com.br/products/fone_de_ouvido_bluetooth_philips_tws_tat2206_preto_1568858175_e03e_600x600.png"
-      },
-      {
-        "id": 3,
-        "nome": "Suporte para Smartphone",
-        "descricao": "Suporte ajustável para smartphone, ideal para mesa ou bancada.",
-        "preco": 12.49,
-        "categoria": "Acessórios",
-        "quantidade_estoque": 200,
-        "url_imagem": "https://images.tcdn.com.br/img/img_prod/571937/suporte_veicular_p_celular_sv3102_hayom_8934_1_e82a6e8c35392f252f0406ae679943ae_20240430210911.png"
-      },
-      {
-        "id": 4,
-        "nome": "Carregador USB-C",
-        "descricao": "Carregador rápido USB-C com potência de 18W.",
-        "preco": 19.99,
-        "categoria": "Eletrônicos",
-        "quantidade_estoque": 120,
-        "url_imagem": "https://conceitoystore.com.br/cdn/shop/files/product-image-1820450131-removebg-preview_aee19ba7-d039-4b31-8f0e-a6d859a4d718.png?v=1684945318&width=1445"
-      },
-      {
-        "id": 5,
-        "nome": "Capa para Laptop",
-        "descricao": "Capa para laptop de 15 polegadas, resistente à água e feita de neoprene.",
-        "preco": 29.99,
-        "categoria": "Acessórios",
-        "quantidade_estoque": 75,
-        "url_imagem": "https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/largadao/catalog/capa-para-tablet-case-em-couro-ant-impacto.jpg"
-      },
-      {
-        "id": 6,
-        "nome": "Teclado Mecânico",
-        "descricao": "Teclado mecânico com iluminação RGB e switches azuis.",
-        "preco": 69.99,
-        "categoria": "Eletrônicos",
-        "quantidade_estoque": 45,
-        "url_imagem": "https://cdn.iset.io/assets/00665/produtos/4528/teclado-hyperx-alloy-origins-core-rgb-tkl-abnt2-hx-kb7blx-br-01.png"
-      },
-      {
-        "id": 7,
-        "nome": "Mouse Pad Gamer",
-        "descricao": "Mouse pad gamer grande com base emborrachada antiderrapante.",
-        "preco": 14.99,
-        "categoria": "Acessórios",
-        "quantidade_estoque": 130,
-        "url_imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK4lOuDZ7OioeZHvHoOrQtHbVGJa8vkhj-ww&s"
-      },
-      {
-        "id": 8,
-        "nome": "Fones de Ouvido Sem Fio",
-        "descricao": "Fones de ouvido sem fio compactos com estojo de carregamento.",
-        "preco": 59.99,
-        "categoria": "Eletrônicos",
-        "quantidade_estoque": 90,
-        "url_imagem": "https://m.media-amazon.com/images/I/51ledjvvS+L._AC_UF1000,1000_QL80_.jpg"
-      },
-      {
-        "id": 9,
-        "nome": "Power Bank Portátil",
-        "descricao": "Power bank portátil de 10000mAh com portas USB-C e USB-A.",
-        "preco": 39.99,
-        "categoria": "Eletrônicos",
-        "quantidade_estoque": 110,
-        "url_imagem": "https://images.kabum.com.br/produtos/fotos/505225/carregador-portatil-power-bank-geonav-10-000-mah-cinza-espacial-8203-pb10k20wsg_1703006810_g.jpg"
-      },
-      {
-        "id": 10,
-        "nome": "Câmera de Ação 4K",
-        "descricao": "Câmera de ação 4K à prova d'água com Wi-Fi e lente grande angular de 170°.",
-        "preco": 149.99,
-        "categoria": "Eletrônicos",
-        "quantidade_estoque": 30,
-        "url_imagem": "https://m.media-amazon.com/images/I/61+KKkgXlGL._AC_UF894,1000_QL80_.jpg"
-      }
-    ]
-  }
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Mouse Sem Fio",
+      "descricao": "Mouse ergonômico sem fio com sensibilidade de 1600 DPI.",
+      "preco": 25.99,
+      "categoria": "Eletrônicos",
+      "quantidade_estoque": 150,
+      "url_imagem": "https://a-static.mlcdn.com.br/350x350/mouse-sem-fio-silencioso-com-led-bluetooth-usb-notebook-pc-tablet-kiddo-store/kiddostore-br/mourbpt-1/3ed308c401096f71b44bae27119f2a3b.jpeg"
+    },
+    {
+      "id": 2,
+      "nome": "Fones de Ouvido Bluetooth",
+      "descricao": "Fones de ouvido com cancelamento de ruído e Bluetooth 5.0.",
+      "preco": 89.99,
+      "categoria": "Eletrônicos",
+      "quantidade_estoque": 85,
+      "url_imagem": "https://cdn.leroymerlin.com.br/products/fone_de_ouvido_bluetooth_philips_tws_tat2206_preto_1568858175_e03e_600x600.png"
+    },
+    {
+      "id": 3,
+      "nome": "Suporte para Smartphone",
+      "descricao": "Suporte ajustável para smartphone, ideal para mesa ou bancada.",
+      "preco": 12.49,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 200,
+      "url_imagem": "https://images.tcdn.com.br/img/img_prod/571937/suporte_veicular_p_celular_sv3102_hayom_8934_1_e82a6e8c35392f252f0406ae679943ae_20240430210911.png"
+    },
+    {
+      "id": 4,
+      "nome": "Carregador USB-C",
+      "descricao": "Carregador rápido USB-C com potência de 18W.",
+      "preco": 19.99,
+      "categoria": "Eletrônicos",
+      "quantidade_estoque": 120,
+      "url_imagem": "https://conceitoystore.com.br/cdn/shop/files/product-image-1820450131-removebg-preview_aee19ba7-d039-4b31-8f0e-a6d859a4d718.png?v=1684945318&width=1445"
+    },
+    {
+      "id": 5,
+      "nome": "Capa para Laptop",
+      "descricao": "Capa para laptop de 15 polegadas, resistente à água e feita de neoprene.",
+      "preco": 29.99,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 75,
+      "url_imagem": "https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/largadao/catalog/capa-para-tablet-case-em-couro-ant-impacto.jpg"
+    },
+    {
+      "id": 6,
+      "nome": "Teclado Mecânico",
+      "descricao": "Teclado mecânico com iluminação RGB e switches azuis.",
+      "preco": 69.99,
+      "categoria": "Eletrônicos",
+      "quantidade_estoque": 45,
+      "url_imagem": "https://cdn.iset.io/assets/00665/produtos/4528/teclado-hyperx-alloy-origins-core-rgb-tkl-abnt2-hx-kb7blx-br-01.png"
+    },
+    {
+      "id": 7,
+      "nome": "Mouse Pad Gamer",
+      "descricao": "Mouse pad gamer grande com base emborrachada antiderrapante.",
+      "preco": 14.99,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 130,
+      "url_imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK4lOuDZ7OioeZHvHoOrQtHbVGJa8vkhj-ww&s"
+    },
+    {
+      "id": 8,
+      "nome": "Fones de Ouvido Sem Fio",
+      "descricao": "Fones de ouvido sem fio compactos com estojo de carregamento.",
+      "preco": 59.99,
+      "categoria": "Eletrônicos",
+      "quantidade_estoque": 90,
+      "url_imagem": "https://m.media-amazon.com/images/I/51ledjvvS+L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 9,
+      "nome": "Power Bank Portátil",
+      "descricao": "Power bank portátil de 10000mAh com portas USB-C e USB-A.",
+      "preco": 39.99,
+      "categoria": "Eletrônicos",
+      "quantidade_estoque": 110,
+      "url_imagem": "https://images.kabum.com.br/produtos/fotos/505225/carregador-portatil-power-bank-geonav-10-000-mah-cinza-espacial-8203-pb10k20wsg_1703006810_g.jpg"
+    },
+    {
+      "id": 10,
+      "nome": "Câmera de Ação 4K",
+      "descricao": "Câmera de ação 4K à prova d'água com Wi-Fi e lente grande angular de 170°.",
+      "preco": 149.99,
+      "categoria": "Eletrônicos",
+      "quantidade_estoque": 30,
+      "url_imagem": "https://m.media-amazon.com/images/I/61+KKkgXlGL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": 11,
+      "nome": "Caixa de Som Bluetooth",
+      "descricao": "Caixa de som portátil com Bluetooth e som estéreo.",
+      "preco": 59.99,
+      "categoria": "Eletrônicos",
+      "quantidade_estoque": 150,
+      "url_imagem": "https://example.com/caixa-som-bluetooth.png"
+    },
+    {
+      "id": 12,
+      "nome": "Microfone Condensador USB",
+      "descricao": "Microfone condensador com conexão USB, ideal para gravações e streaming.",
+      "preco": 129.99,
+      "categoria": "Eletrônicos",
+      "quantidade_estoque": 90,
+      "url_imagem": "https://example.com/microfone-usb.png"
+    },
+    {
+      "id": 13,
+      "nome": "Monitor Full HD 24\"",
+      "descricao": "Monitor de 24 polegadas com resolução Full HD e bordas finas.",
+      "preco": 499.99,
+      "categoria": "Eletrônicos",
+      "quantidade_estoque": 30,
+      "url_imagem": "https://example.com/monitor-fullhd.png"
+    },
+    {
+      "id": 14,
+      "nome": "Capa para Tablet",
+      "descricao": "Capa protetora para tablet de 10 polegadas, resistente a impactos.",
+      "preco": 19.99,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 80,
+      "url_imagem": "https://images.tcdn.com.br/img/img_prod/789512/capa_para_tablet_10_polegadas_3014_1_20210719135814.jpg"
+    },
+    {
+      "id": 15,
+      "nome": "Hub USB 4 Portas",
+      "descricao": "Hub USB com 4 portas 3.0 para expansão de dispositivos.",
+      "preco": 14.99,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 100,
+      "url_imagem": "https://a-static.mlcdn.com.br/618x463/hub-usb-3-0-4-portas-ultrafino-com-um-somente-1-entrada/primeimports/pm30338/fb84c14782a69f75000a40ec105c6a1d.jpeg"
+    },
+    {
+      "id": 16,
+      "nome": "Suporte de Carro para Celular",
+      "descricao": "Suporte ajustável para celular com encaixe na grade de ventilação do carro.",
+      "preco": 9.99,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 150,
+      "url_imagem": "https://images.tcdn.com.br/img/img_prod/793158/suporte_para_celular_veicular_com_rotacao_360_1730_1_20210429132552.jpg"
+    },
+    {
+      "id": 17,
+      "nome": "Cabo HDMI de 2 Metros",
+      "descricao": "Cabo HDMI de alta velocidade com 2 metros de comprimento.",
+      "preco": 7.99,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 250,
+      "url_imagem": "https://a-static.mlcdn.com.br/618x463/cabo-hdmi-20-ultra-hd-4k-60hz-2-metros-copos/tendaeletronica/16033/15491a8e80a3069d5b6483434fabe39e.jpeg"
+    },
+    {
+      "id": 18,
+      "nome": "Luva para Tela Touch",
+      "descricao": "Luva para uso em telas touch, ideal para inverno.",
+      "preco": 12.99,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 60,
+      "url_imagem": "https://images.tcdn.com.br/img/img_prod/677013/luva_de_ladex_preta_com_palmar_touch_para_telado_celular_10777_1_20230516154803.jpg"
+    },
+    {
+      "id": 19,
+      "nome": "Organizador de Cabos",
+      "descricao": "Organizador para cabos de eletrônicos, mantém tudo em ordem.",
+      "preco": 5.99,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 300,
+      "url_imagem": "https://a-static.mlcdn.com.br/618x463/organizador-de-cabos-coordenador-fita-velcro-com-20-unidades/bringitinformatica/72940022195/c97e18e7404bcb145f30d4b4bbf8a92f.jpeg"
+    },
+    {
+      "id": 20,
+      "nome": "Bolsa para Câmera",
+      "descricao": "Bolsa compacta e acolchoada para câmera fotográfica e acessórios.",
+      "preco": 29.99,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 45,
+      "url_imagem": "https://a-static.mlcdn.com.br/618x463/bolsa-case-para-camera-dslr-com-lente-extra-yunteng-wt-9530-kikos-jjc/navegafoto/case-dslr/2552e5f370c8b7a9a477de0c18e6943b.jpeg"
+    },
+    {
+      "id": 21,
+      "nome": "Teclado Flexível",
+      "descricao": "Teclado flexível e resistente à água, ideal para transporte.",
+      "preco": 22.99,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 75,
+      "url_imagem": "https://cdn.awsli.com.br/1000x1000/1812/1812608/produto/88543912/573dffeb4a.jpg"
+    },
+    {
+      "id": 22,
+      "nome": "Lente Clip para Smartphone",
+      "descricao": "Lente de aumento e wide-angle para câmeras de smartphones.",
+      "preco": 15.99,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 80,
+      "url_imagem": "https://a-static.mlcdn.com.br/618x463/lente-para-camera-smartphone-clip-fisheye-wide-macro-3-em-1-universal/lojaimportbrasil/5d322b8e66be11ec87fa4201ac18500e/33746b4961448a15d1d209a2250306b9.jpeg"
+    },
+    {
+      "id": 23,
+      "nome": "Cabo Carregador Magnético",
+      "descricao": "Cabo de carregamento magnético para dispositivos USB-C.",
+      "preco": 10.99,
+      "categoria": "Acessórios",
+      "quantidade_estoque": 200,
+      "url_imagem": "https://a-static.mlcdn.com.br/618x463/cabo-carregador-magnetico-3-em-1-usb-com-magnetismo-tipo-c-micro-v8-e-ip-12/boascomprasimportados/cmrgb-01/8b1f64c172832cc9b0dfbf84320a9d9e.jpeg"
+    }
+  ]
+}
