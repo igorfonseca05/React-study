@@ -11,6 +11,7 @@ import Nav from './components/nav/nav'
 // Importando paginas
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
+import ProductPage from './pages/productPage/ProductPage'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home data = {data}/>}/>
           <Route path='/about' element={<About/>}/>
+          <Route path='/produtos/:id' element={<ProductPage/>}/>
         </Routes>
       </BrowserRouter>
     </>
