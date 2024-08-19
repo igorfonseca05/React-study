@@ -1,10 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ProductCard from '../../components/cards/ProductCard'
 import './Home.css'
 
 import SideBar from '../../components/SideBar/SideBar'
 
 function Home({ data }) {
+
+  const [scrollProducts, setScrollProducts] = useState(false)
+
+  function handleProductsContainer () {
+    const productContainer = document.querySelector('.products-container')
+
+    if(Math.floor(productContainer.getBoundingClientRect().top) <= 50) {
+      productContainer.style.overflowY = 'scroll'
+    }
+
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleProductsContainer)
+
+    return () => {
+      window.removeEventListener('scroll', handleProductsContainer)
+    }
+  }, [])
 
   return (
     <div className='home'>
