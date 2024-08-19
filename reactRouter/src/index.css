@@ -19,7 +19,7 @@ h1 {
 
 /* From Uiverse.io by satyamchaudharydev */ 
 button {
-  --primary-color: #645bff;
+  /* --primary-color: #645bff; */
   --secondary-color: #fff;
   --hover-color: #111;
   --arrow-width: 10px;
@@ -27,9 +27,9 @@ button {
   box-sizing: border-box;
   border: 0;
   border-radius: 20px;
-  color: var(--secondary-color);
+  color: var(--cinzaClaro);
   padding: 1em 1.8em;
-  background-color: var(--primary-color);
+  background-color: var(--roxo1);
   display: flex;
   transition: 0.2s background-color;
   align-items: center;
