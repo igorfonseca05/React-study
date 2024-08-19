@@ -9,6 +9,7 @@
     font-family: Arial, sans-serif;
     /* padding: 12px; */
     background-color: white;
+    min-height: 410px;
 }
 
 .card img {
@@ -20,7 +21,6 @@
 }
 
 .card-body {
-   
     /* justify-content: center; */
     /* align-items: center; */
     padding: 15px;
@@ -40,6 +40,7 @@
     color: #666;
     font-size: 0.9em;
     margin: 10px 0;
+    background-color: #ddd;
 }
 
 .card-price {

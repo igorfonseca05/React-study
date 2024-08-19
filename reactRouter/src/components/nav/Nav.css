@@ -6,10 +6,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
+  width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
+  /* position: sticky; */
+  /* top: 0; */
   z-index: 1000;
+  transition: top 0.3s;
+  position: fixed;
 }
 
 .navbar .logo h1 {
@@ -50,3 +53,13 @@
 .material-symbols-outlined:hover {
   filter: invert(80%);
 }
+
+
+.navbar-show {
+  top: 0;
+}
+
+.navbar-hide {
+  top: -90px; /* Ajuste conforme a altura da sua Navbar */
+}
+

@@ -10,7 +10,7 @@ function Home({ data }) {
     <div className='home'>
       <div className="home-header">
         <div className="home-banner">
-          <h1>Bem-vindo à Nossa Loja!</h1>
+          <h1>Bem-vindo à Web/Shop</h1>
           <p>Encontre os melhores produtos com os melhores preços. Qualidade e inovação ao seu alcance.</p>
           <button className="shop-now-button">Compre Agora</button>
         </div>

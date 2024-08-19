@@ -1,10 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
 const Navbar = () => {
+
+  const [hideMenu, setHideMenu] = useState(false)
+  const [lastScrollTop, setLastScrollTop] = useState(0)
+
+  function handleScroll () {
+    const currentScrollTop = window.scrollY;
+
+    if(currentScrollTop > lastScrollTop) {
+      setHideMenu(true)
+    } else {
+      setHideMenu(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [lastScrollTop])
+
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${hideMenu ? 'navbar-hide' : 'navbar-show'}`}>
       <div className="logo">
         <h1>Web/Shop</h1>
       </div>
