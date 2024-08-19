@@ -1,0 +1,8 @@
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    /* background-color: violet; */
+    justify-content: center;
+}

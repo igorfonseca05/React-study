@@ -3,6 +3,8 @@ import './App.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+import { useFetch } from './hooks/UseFetch'
+
 // Importando componentes
 import Nav from './components/nav/nav'
 
@@ -12,12 +14,18 @@ import About from './pages/About/About'
 
 function App() {
 
+  const url = 'http://localhost:3000/produtos'
+
+  const {data} = useFetch(url)
+
+  console.log(data)
+
   return (
     <>
       <BrowserRouter>
         <Nav></Nav>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<Home data = {data}/>}/>
           <Route path='/about' element={<About/>}/>
         </Routes>
       </BrowserRouter>
