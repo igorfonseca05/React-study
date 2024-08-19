@@ -1,7 +1,7 @@
 /* src/components/Navbar.css */
 
 .navbar {
-  background-color: #465952;
+  background-color: var(--cinzaClaro-transparent);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .navbar .logo h1 {
-  color: #ffffff;
+  color: var(--roxo1);
   font-size: 1.8em;
   font-weight: bold;
   margin: 0;
@@ -34,7 +34,7 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--roxo2);
   font-size: 1.2em;
   transition: color 0.3s ease;
 }
@@ -43,17 +43,19 @@
   color: #d8d8d8;
 }
 
-.material-symbols-outlined {
-  width: 30px;
-  height: 30px;
-  filter: invert(100%);
+.end-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  height: 40px;
+  /* filter: invert(100%); */
   transition: filter 0.3s ease;
+  color: var(--roxo2);
 }
 
 .material-symbols-outlined:hover {
-  filter: invert(80%);
+  color: var(--roxo3-hover);
 }
-
 
 .navbar-show {
   top: 0;
@@ -61,5 +63,33 @@
 
 .navbar-hide {
   top: -90px; /* Ajuste conforme a altura da sua Navbar */
+}
+
+/* searchInput */
+/* From Uiverse.io by garerim */ 
+.container-input {
+  position: relative;
+}
+
+.input {
+  width: 150px;
+  padding: 10px 0px 10px 40px;
+  border-radius: 9999px;
+  border: solid 1px #333;
+  transition: all .2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
+
+.container-input svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 250px;
 }
 
