@@ -18,7 +18,7 @@ function App() {
 
   const {data} = useFetch(url)
 
-  console.log(data)
+  // console.log(data)
 
   return (
     <>
