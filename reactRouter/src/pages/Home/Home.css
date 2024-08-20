@@ -50,7 +50,7 @@
 .home-banner {
     text-align: start;
     max-width: 600px;
-    margin: 80px 50px;
+    margin: 80px 5.62em;
     /* background-color: turquoise; */
 }
 
@@ -62,7 +62,8 @@
 }
 
 .home-banner p {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    margin-left: 0.1em;
     color:  rgb(43, 43, 43);
     margin-bottom: 30px;
 }
@@ -71,6 +72,7 @@
     width: 160px;
     /* margin: 0 auto; */
     font-size: 18px;
+    margin-left: 0.2em;
     border-radius: 50px !important;
     /* height: 50px; */
 }

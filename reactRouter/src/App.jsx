@@ -12,23 +12,25 @@ import Nav from './components/nav/Nav'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import ProductPage from './pages/productPage/ProductPage'
+import Grid from './components/grid/Grid'
 
 function App() {
 
   const url = 'http://localhost:3000/produtos'
 
-  const {data} = useFetch(url)
+  const { data } = useFetch(url)
 
   // console.log(data)
 
   return (
     <>
+        <Grid></Grid>
       <BrowserRouter>
         <Nav></Nav>
         <Routes>
-          <Route path='/' element={<Home data = {data}/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/produtos/:id' element={<ProductPage/>}/>
+          <Route path='/' element={<Home data={data} />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/produtos/:id' element={<ProductPage />} />
         </Routes>
       </BrowserRouter>
     </>

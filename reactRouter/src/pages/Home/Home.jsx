@@ -3,6 +3,7 @@ import ProductCard from '../../components/cards/ProductCard'
 import './Home.css'
 
 import SideBar from '../../components/SideBar/SideBar'
+import Grid from '../../components/grid/Grid'
 
 function Home({ data }) {
 

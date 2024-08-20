@@ -5,14 +5,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
-  width: 100%;
+  padding: 10px 20px;
+  width: 86%;
+  margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* position: sticky; */
   /* top: 0; */
-  z-index: 1000;
+  z-index: 199;
   transition: top 0.2s;
   position: fixed;
+  top: 0; /* Fixa a barra no topo da página */
+  left: 0;
+  right: 0;
+  border-radius: 18px;
 }
 
 .logo {

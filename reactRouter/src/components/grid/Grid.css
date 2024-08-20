@@ -1,0 +1,16 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    z-index: 200;
+    position: fixed;
+    width: 100%;
+    display: none;
+}
+
+.grid {
+    /* width: 20px; */
+    height: 100vh !important;
+    background-color: rgba(252, 200, 220, 0.288);
+}
