@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useFetch } from './hooks/UseFetch'
 
 // Importando componentes
-import Nav from './components/nav/nav'
+import Nav from './components/nav/Nav'
 
 // Importando paginas
 import Home from './pages/Home/Home'

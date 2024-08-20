@@ -17,8 +17,7 @@ h1 {
   text-align: center;
 }
 
-/* From Uiverse.io by satyamchaudharydev */ 
-button {
+.btn {
   /* --primary-color: #645bff; */
   --secondary-color: #fff;
   --hover-color: #111;
@@ -35,15 +34,16 @@ button {
   align-items: center;
   gap: 0.6em;
   font-weight: bold;
+  justify-content: center;
 }
 
-button .arrow-wrapper {
+.btn .arrow-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-button .arrow {
+.btn .arrow {
   margin-top: 1px;
   width: var(--arrow-width);
   background: var(--primary-color);
@@ -52,7 +52,7 @@ button .arrow {
   transition: 0.2s;
 }
 
-button .arrow::before {
+.btn .arrow::before {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -66,14 +66,14 @@ button .arrow::before {
   transform: rotate(-45deg);
 }
 
-button:hover {
+.btn:hover {
   background-color: var(--hover-color);
 }
 
-button:hover .arrow {
+.btn:hover .arrow {
   background: var(--secondary-color);
 }
 
-button:hover .arrow:before {
+.btn:hover .arrow:before {
   right: 0;
 }

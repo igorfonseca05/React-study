@@ -40,8 +40,9 @@
     /* background-color: #ee1616; */
     /* border-radius: px; */
     /* margin-bottom: 30px; */
-    background-image: url("https://images.unsplash.com/photo-1608286022625-bc07f7a21154?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-position: center;
+    background-image: url("bg2.png");
+    background-size: cover;
+    background-position: bottom;
     /* filter: blur(1px); */
 }
 
@@ -54,13 +55,13 @@
 
 .home-banner h1 {
     font-size: 3em;
-    color: #F2F2F0;
+    color: var(--roxo1);
     margin-bottom: 20px;
 }
 
 .home-banner p {
     font-size: 1.2em;
-    color:#F2F2F0;
+    color: var(--roxo2);
     margin-bottom: 30px;
 }
 

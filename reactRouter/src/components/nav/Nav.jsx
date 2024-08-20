@@ -32,6 +32,7 @@ const Navbar = () => {
     <nav className={`navbar ${hideMenu ? 'navbar-hide' : 'navbar-show'}`}>
       <div className="logo">
         <h1>Web/Shop</h1>
+        <img src="logo_identical.svg" alt="" />
       </div>
       <div class="container-input">
         <input type="text" placeholder="Search" name="text" class="input" />
@@ -51,7 +52,7 @@ const Navbar = () => {
           <Link to="/products" className="nav-link">Products</Link>
         </li>
         <li className="nav-item">
-          <button>
+          <button className='btn'>
             Sign up
             <div class="arrow-wrapper">
               <div class="arrow"></div>
@@ -59,10 +60,6 @@ const Navbar = () => {
           </button>
         </li>
       </ul>
-      <div className="end-buttons-container">
-        <a href="#"><span className='material-symbols-outlined card-icon'>shopping_cart</span></a>
-      </div>
-
     </nav>
   );
 };

@@ -11,8 +11,8 @@ function Home({ data }) {
       <div className="home-header">
         <div className="home-banner">
           <h1>Bem-vindo à Web/Shop</h1>
-          <p>Encontre os melhores produtos com os melhores preços. Qualidade e inovação ao seu alcance.</p>
-          <button className="shop-now-button">Compre Agora</button>
+          <p>Cadastre-se agora e descubra produtos incríveis com os melhores preços. Qualidade e inovação esperam por você!</p>
+          <button className="shop-now-button">Criar conta</button>
         </div>
       </div>
       <div className="highlights-section">

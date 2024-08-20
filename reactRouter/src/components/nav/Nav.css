@@ -1,7 +1,7 @@
 /* src/components/Navbar.css */
 
 .navbar {
-  background-color: var(--cinzaClaro);
+  background-color: rgba(255, 255, 255, 0.493);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,11 +15,15 @@
   position: fixed;
 }
 
+.logo {
+  display: flex;
+}
+
 .navbar .logo h1 {
   color: var(--roxo1);
   font-size: 1.8em;
   font-weight: bold;
-  margin: 0;
+  margin-right: 8px;
 }
 
 .nav-links {
