@@ -6,7 +6,7 @@
   --roxo1: #6C51A6;
   --roxo2: #7263A6;
   --roxo3: #C7BFD9;
-  --roxo3-hover: #7e5ec4;
+  --roxo3-hover: #6336c4;
   --cinzaClaro: #F2F2F2;
   --cinzaClaro-transparent: #f2f2f2da;
   --cinzaEscuro: #404040;
@@ -67,7 +67,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: var(--hover-color);
+  background-color: var(--roxo3-hover);
 }
 
 .btn:hover .arrow {

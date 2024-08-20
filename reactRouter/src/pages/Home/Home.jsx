@@ -12,7 +12,12 @@ function Home({ data }) {
         <div className="home-banner">
           <h1>Bem-vindo à Web/Shop</h1>
           <p>Cadastre-se agora e descubra produtos incríveis com os melhores preços. Qualidade e inovação esperam por você!</p>
-          <button className="shop-now-button">Criar conta</button>
+          <button className='btn shop-now-button'>
+            Cadastrar
+            <div className="arrow-wrapper">
+              <div className="arrow"></div>
+            </div>
+          </button>
         </div>
       </div>
       <div className="highlights-section">

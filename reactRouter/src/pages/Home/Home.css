@@ -34,13 +34,13 @@
     /* max-width: 99%; */
     /* margin: 0 auto; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
     /* background-color: #ee1616; */
     /* border-radius: px; */
     /* margin-bottom: 30px; */
-    background-image: url("bg2.png");
+    background-image: url("bg3.png");
     background-size: cover;
     background-position: bottom;
     /* filter: blur(1px); */
@@ -48,36 +48,35 @@
 
 
 .home-banner {
-    text-align: center;
-    max-width: 800px;
-    margin: 83px;
+    text-align: start;
+    max-width: 600px;
+    margin: 80px 50px;
+    /* background-color: turquoise; */
 }
 
 .home-banner h1 {
     font-size: 3em;
-    color: var(--roxo1);
+    color: rgb(0, 0, 0);
     margin-bottom: 20px;
+    text-align: start;
 }
 
 .home-banner p {
     font-size: 1.2em;
-    color: var(--roxo2);
+    color:  rgb(43, 43, 43);
     margin-bottom: 30px;
 }
 
 .shop-now-button {
-    background-color: #fc685a;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
+    width: 160px;
+    /* margin: 0 auto; */
+    font-size: 18px;
+    border-radius: 50px !important;
+    /* height: 50px; */
 }
 
 .shop-now-button:hover {
-    background-color: #fd4a3a;
+    background-color: var(--roxo3-hover);
 }
 
 .highlights-section {
