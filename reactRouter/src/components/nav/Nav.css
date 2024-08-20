@@ -1,11 +1,11 @@
 /* src/components/Navbar.css */
 
 .navbar {
-  background-color: var(--cinzaClaro-transparent);
+  background-color: var(--cinzaClaro);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 10px 50px;
   width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* position: sticky; */
@@ -36,7 +36,7 @@
 .nav-links a {
   text-decoration: none;
   color: var(--roxo2);
-  font-size: 1.2em;
+  font-size: 0.9em;
   transition: color 0.3s ease;
 }
 
@@ -73,10 +73,10 @@
 }
 
 .input {
-  width: 150px;
+  width: 250px;
   padding: 10px 0px 10px 40px;
   border-radius: 9999px;
-  border: solid 1px #333;
+  border: solid 1px var(--roxo2);
   transition: all .2s ease-in-out;
   outline: none;
   opacity: 0.8;
@@ -87,10 +87,11 @@
   top: 50%;
   left: 10px;
   transform: translate(0, -50%);
+  color: var(--roxo1) !important;
 }
 
 .input:focus {
   opacity: 1;
-  width: 250px;
+  width: 350px;
 }
 
