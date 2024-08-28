@@ -4,6 +4,10 @@ import './Home.css'
 
 import SideBar from '../../components/SideBar/SideBar'
 import Grid from '../../components/grid/Grid'
+import CardDeDestaques from '../../components/card-destaque/CardDeDestaques'
+import Slider from '../../components/slider/Slider'
+
+// Card de destaque
 
 function Home({ data }) {
 
@@ -14,25 +18,26 @@ function Home({ data }) {
           <h1>Bem-vindo à Web/Shop</h1>
           <p>Cadastre-se agora e descubra produtos incríveis com os melhores preços. Qualidade e inovação esperam por você!</p>
           <button className='btn shop-now-button'>
-            Cadastrar
+            Compre agora
             <div className="arrow-wrapper">
               <div className="arrow"></div>
             </div>
           </button>
         </div>
+        <div className='slider'>
+          <Slider></Slider>
+        </div>
       </div>
       <div className="highlights-section">
-        <div className="highlight-card">
-          <h2>Ofertas Especiais</h2>
-          <p>Aproveite as melhores ofertas do mês!</p>
-          <button>Ver Ofertas</button>
-        </div>
-        <div className="highlight-card">
-          <h2>Novos Produtos</h2>
-          <p>Confira as novidades que acabaram de chegar.</p>
-          <button>Ver Novidades</button>
-        </div>
-      </div>
+        <CardDeDestaques 
+          title={'Ofertas Especiais'} 
+          info={'Aproveite as melhores ofertas do mês'} 
+          buttonText={'Ver Ofertas'}/>
+        <CardDeDestaques 
+          title={'Novos Produtos'} 
+          info={'Confira as novidades que acabaram de chegar.'} 
+          buttonText={'Ver Novidades'}/>
+          </div>
 
       <section className='products-section'>
         <SideBar />

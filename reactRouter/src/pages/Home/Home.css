@@ -69,12 +69,13 @@
 }
 
 .shop-now-button {
-    width: 160px;
+    width:50;
     /* margin: 0 auto; */
-    font-size: 18px;
+    font-size: 0.8em;
     margin-left: 0.2em;
     border-radius: 50px !important;
     /* height: 50px; */
+    padding: 10px;
 }
 
 .shop-now-button:hover {
@@ -87,49 +88,6 @@
     padding: 20px 0;
     background-color: #f4f4f4;
 }
-
-.highlight-card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    flex: 1;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
-}
-
-.highlight-card h2 {
-    color: #465952;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.highlight-card p {
-    color: #666666;
-    font-size: 1em;
-    margin-bottom: 20px;
-}
-
-.highlight-card button {
-    background-color: #465952;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-.highlight-card button:hover {
-    background-color: #364843;
-}
-
-.highlight-card:hover {
-    transform: translateY(-5px);
-}
-
 
 
 

@@ -1,5 +1,4 @@
 /* src/components/Navbar.css */
-
 .navbar {
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -24,38 +23,66 @@
   display: flex;
 }
 
-.navbar .logo h1 {
+.navbar .logo .Link-home {
   color: var(--roxo1);
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
-  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .nav-links {
   list-style-type: none;
   display: flex;
   align-items: center;
-  gap: 30px;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  /* background-color: turquoise; */
+  width: 85%;
 }
 
+.first-part {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+  /* background-color: violet; */
+  /* margin-left: 100px; */
+}
+
+.first-part , .second-part  {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+
 .nav-links li {
-  margin: 0;
+  margin: 0px;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--roxo2);
-  font-size: 0.9em;
+  font-size: 1.5em;
   transition: color 0.3s ease;
 }
 
+.nav-links a:not(.material-symbols-outlined) {
+  text-decoration: none;
+  color: var(--roxo2);
+  font-size: 1em;
+  transition: color 0.3s ease;
+  /* margin: 0 auto; */
+}
+
 .nav-links a:hover {
-  color: #d8d8d8;
+  color: #ad24a7;
 }
 
 .end-buttons-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 150px;
   height: 40px;
   /* filter: invert(100%); */
@@ -82,9 +109,9 @@
 }
 
 .input {
-  width: 250px;
-  padding: 10px 0px 10px 40px;
-  border-radius: 9999px;
+  width: 200px;
+  padding: 5px 0px 5px 40px;
+  border-radius: 50px;
   border: solid 1px var(--roxo2);
   transition: all .2s ease-in-out;
   outline: none;
@@ -101,6 +128,6 @@
 
 .input:focus {
   opacity: 1;
-  width: 350px;
+  width: 250px;
 }
 
