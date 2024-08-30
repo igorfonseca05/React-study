@@ -83,11 +83,23 @@ h1 {
 @media (max-width: 576px) {
   /* Estilos específicos para telas pequenas */
   .navbar {
+    display: flex;
+    justify-content: end;
     width: 100%;
     max-width: 1350px !important;
     border-radius: 0px !important;
     box-shadow: none;
   }
+
+  .nav-links{
+    display: none;
+    /* width: 100%; */
+  }
+
+  .iconAndSearchMenu .nav-item, .logo img {
+    display: none;
+  }
+  
 }
 
 /* Dispositivos médios (tablets em modo retrato) */
@@ -99,6 +111,15 @@ h1 {
     border-radius: 0px !important;
     box-shadow: none;
   }
+
+  /* .input-search {
+    width: 230px;
+    padding: 6px 0px 6px 37px;
+    border-radius: 50px;
+    border: solid 1px var(--roxo2);
+
+  } */
+  
 }
 
 /* Dispositivos grandes (tablets em modo paisagem ou laptops pequenos) */

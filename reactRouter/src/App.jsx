@@ -16,6 +16,7 @@ import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import ProductPage from './pages/productPage/ProductPage'
 import Grid from './components/grid/Grid'
+import MenuMobile from './components/MobileMenu/MenuMobile'
 
 function App() {
 
