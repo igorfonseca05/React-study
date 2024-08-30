@@ -14,7 +14,7 @@ function Home({ data }) {
   return (
     <div className='home'>
       <div className="home-header">
-        <div className="home-banner">
+        {/* <div className="home-banner">
           <h1>Bem-vindo à Web/Shop</h1>
           <p>Cadastre-se agora e descubra produtos incríveis com os melhores preços. Qualidade e inovação esperam por você!</p>
           <button className='btn shop-now-button'>
@@ -23,7 +23,7 @@ function Home({ data }) {
               <div className="arrow"></div>
             </div>
           </button>
-        </div>
+        </div> */}
         <div className='slider'>
           <Slider></Slider>
         </div>

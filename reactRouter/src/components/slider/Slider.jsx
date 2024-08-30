@@ -4,26 +4,42 @@ import './Slider.css'
 
 function Slider() {
     return (
-        <div>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://img.freepik.com/psd-premium/fones-de-ouvido-modernos-isolados-em-um-fundo-transparente-por-ia-generativa_921538-1873.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1722902400&semt=ais_hybrid" class="d-block w-100" alt="..." />
+        <div className='slider-container'>
+            <div  id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <img src="bg2.png" className="d-block w-100" alt="..." />
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://png.pngtree.com/png-vector/20240513/ourlarge/pngtree-bluetooth-headset-earphones-true-png-image_12443025.png" class="d-block w-100" alt="..." />
+                    <div className="carousel-item">
+                        <img src="bg3.png" className="d-block w-100" alt="..." />
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://e7.pngegg.com/pngimages/425/331/png-clipart-rog-swift-4k-hdr-gaming-monitor-pg27uq-nvidia-g-sync-computer-monitors-4k-resolution-ultra-high-definition-television-nvidia-television-electronics.png" class="d-block w-100" alt="..." />
+                    <div className="carousel-item">
+                        <img src="bg.png" className="d-block w-100" alt="..." />
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                {/* <div className="carousel-item active">
+                        <div className='slider-content'>
+                            <div className="home-banner">
+                                <h1>Bem-vindo à Web/Shop</h1>
+                                <p>Cadastre-se agora e descubra produtos incríveis com os melhores preços. Qualidade e inovação esperam por você!</p>
+                                <button className='btn shop-now-button'>
+                                    Compre agora
+                                    <div className="arrow-wrapper">
+                                        <div className="arrow"></div>
+                                    </div>
+                                </button>
+                            </div>
+                            <img src="fundo (1).png" className="d-block w-100" alt="..." />
+                        </div>
+                    </div> */}
+
+                <button className="carousel-control-prev button-slider" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span className=".icon" aria-hidden="true">&#10094;</span>
+                    <span className="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <button className="carousel-control-next button-slider" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span className=".icon" aria-hidden="true">&#10095;</span>
+                    <span className="visually-hidden">Next</span>
                 </button>
             </div>
         </div>

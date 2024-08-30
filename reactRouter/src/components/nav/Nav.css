@@ -1,11 +1,13 @@
 /* src/components/Navbar.css */
 .navbar {
   background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex !important;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* align-items: center; */
   padding: 10px 20px;
-  width: 86%;
+  width: 80%;
+  max-width: 1350px !important;
   margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* position: sticky; */
@@ -17,6 +19,7 @@
   left: 0;
   right: 0;
   border-radius: 18px;
+  transition: 0.4s all;
 }
 
 .logo {
@@ -25,27 +28,31 @@
 
 .navbar .logo .Link-home {
   color: var(--roxo1);
-  font-size: 1.5em;
+  font-size: clamp(12px, 2vw, 1em);
   font-weight: bold;
   margin-left: 8px;
+  flex-grow: 1;
 }
 
 .nav-links {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 0px;
   padding: 0px;
   /* background-color: turquoise; */
-  width: 85%;
+  /* width: 90% !important; */
+  flex-grow: 2;
 }
 
 .first-part {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 50%;
   margin: 0 auto;
+  overflow: hidden;
   /* background-color: violet; */
   /* margin-left: 100px; */
 }
@@ -56,22 +63,27 @@
   gap: 24px;
 }
 
+.second-part {
+  margin-left: 10px;
+}
 
 .nav-links li {
   margin: 0px;
 }
 
-.nav-links a {
-  text-decoration: none;
+.nav-links a  {
+  /* text-decoration: none; */
   color: var(--roxo2);
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
+  font-size: clamp(12px, 4vw, 1.5em);
   transition: color 0.3s ease;
 }
 
 .nav-links a:not(.material-symbols-outlined) {
   text-decoration: none;
   color: var(--roxo2);
-  font-size: 1em;
+  /* font-size: 1em; */
+  font-size: clamp(12px, 2vw, 1.2em);
   transition: color 0.3s ease;
   /* margin: 0 auto; */
 }
@@ -106,28 +118,37 @@
 /* From Uiverse.io by garerim */ 
 .container-input {
   position: relative;
+  user-select: none;
 }
 
-.input {
-  width: 200px;
-  padding: 5px 0px 5px 40px;
+.input-search {
+  width: 0px;
+  padding: 6px 0px 6px 37px;
   border-radius: 50px;
-  border: solid 1px var(--roxo2);
-  transition: all .2s ease-in-out;
+  border: none;
+  transition: all 0.4s ease-in-out;
   outline: none;
   opacity: 0.8;
 }
 
-.container-input svg {
+.container-input span {
   position: absolute;
   top: 50%;
   left: 10px;
+  /* transition: ease-in 0.7s; */
   transform: translate(0, -50%);
   color: var(--roxo1) !important;
 }
 
-.input:focus {
+.open {
   opacity: 1;
   width: 250px;
+  border: solid 1px var(--roxo2);
+}
+
+.input-search:focus {
+  opacity: 1;
+  width: 250px;
+  border: solid 1px var(--roxo2);
 }
 

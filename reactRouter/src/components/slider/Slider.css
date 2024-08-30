@@ -1,10 +1,101 @@
-
-.carousel-item {
-    width: 40vw;
-    height: 50vh;
+.active {
+    background-color: rgba(0, 255, 128, 0);
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 100%;
+.slider-container {
+    background-color: aqua !important;
+    height: 60vh;
+}
+
+.slider-container .slide {
+    display: none;
+}
+
+
+
+.slider-content img {
+    flex-grow: 1 !important;
+    /* margin-right: 60px; */
+    width: 60% !important;
+    /* height: 100% !important; */
+}
+
+.home-header {
+    /* max-width: 99%; */
+    /* margin: 0 auto; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0px 0px 0px;
+    background-color: #cacaca;
+    /* border-radius: px; */
+    /* margin-bottom: 30px; */
+    /* background-image: url("bg3.png"); */
+    background-size: cover;
+    background-position: bottom;
+    /* filter: blur(1px); */
+}
+
+.home-banner {
+    /* flex-grow:; */
+    text-align: start;
+    max-width: 600px;
+    margin: 41px 0.62em;
+    /* background-color: turquoise; */
+}
+
+.home-banner h1 {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.home-banner p {
+    font-size: 1.3em;
+    margin-left: 0.1em;
+    color: rgb(43, 43, 43);
+    margin-bottom: 30px;
+}
+
+.shop-now-button {
+    width: 150px;
+    /* margin: 0 auto; */
+    font-size: 0.8em;
+    margin-left: 0.2em;
+    border-radius: 50px !important;
+    /* height: 50px; */
+    padding: 10px;
+}
+
+.shop-now-button:hover {
+    background-color: var(--roxo3-hover);
+}
+
+
+.carousel-inner:hover ~ .button-slider,
+.button-slider:hover {
+    color: rgb(48, 48, 48) !important;
+    background-color: rgba(131, 131, 131, 0.349);
+}
+
+.button-slider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: brown; */
+    width: 4%;
+    height: 20%;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.button-slider:last-child {
+    border-radius: 50px 0px 0px 50px;
+    width: 5%;
+    height: 20%;
+}
+
+.icon {
+    width: 50px;
 }

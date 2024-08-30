@@ -77,3 +77,62 @@ h1 {
 .btn:hover .arrow:before {
   right: 0;
 }
+
+
+/* Dispositivos pequenos (smartphones em modo retrato) */
+@media (max-width: 576px) {
+  /* Estilos específicos para telas pequenas */
+  .navbar {
+    width: 100%;
+    max-width: 1350px !important;
+    border-radius: 0px !important;
+    box-shadow: none;
+  }
+}
+
+/* Dispositivos médios (tablets em modo retrato) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Estilos específicos para tablets */
+  .navbar {
+    width: 100%;
+    max-width: 1350px !important;
+    border-radius: 0px !important;
+    box-shadow: none;
+  }
+}
+
+/* Dispositivos grandes (tablets em modo paisagem ou laptops pequenos) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Estilos específicos para tablets grandes e laptops pequenos */
+  .navbar {
+    width: 95%;
+    max-width: 1350px !important;
+  }
+  
+
+}
+
+/* Dispositivos extra grandes (laptops e desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Estilos específicos para laptops e desktops */
+  .navbar {
+    width: 90%;
+    max-width: 1350px !important;
+  }
+}
+
+/* Dispositivos extra extra grandes (monitores grandes) */
+@media (min-width: 1201px) {
+
+  /* Estilos específicos para monitores grandes */
+
+  .slider-container {
+    /* display: none; */
+    width: 100%;
+    max-width: 1500px;
+  }
+
+  .banner {
+    background-color: #6336c4;
+  }
+}

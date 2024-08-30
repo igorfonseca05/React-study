@@ -7,6 +7,7 @@
 
 .products-section{
     display: grid;
+    display: none !important;
     grid-template-columns: 20% 80%;
     position: relative;
 }
@@ -30,59 +31,9 @@
 
 
 /* Estilo para a seção de cabeçalho da home */
-.home-header {
-    /* max-width: 99%; */
-    /* margin: 0 auto; */
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    padding: 60px 20px;
-    /* background-color: #ee1616; */
-    /* border-radius: px; */
-    /* margin-bottom: 30px; */
-    background-image: url("bg3.png");
-    background-size: cover;
-    background-position: bottom;
-    /* filter: blur(1px); */
-}
-
-
-.home-banner {
-    text-align: start;
-    max-width: 600px;
-    margin: 80px 5.62em;
-    /* background-color: turquoise; */
-}
-
-.home-banner h1 {
-    font-size: 3em;
-    color: rgb(0, 0, 0);
-    margin-bottom: 20px;
-    text-align: start;
-}
-
-.home-banner p {
-    font-size: 1.3em;
-    margin-left: 0.1em;
-    color:  rgb(43, 43, 43);
-    margin-bottom: 30px;
-}
-
-.shop-now-button {
-    width:50;
-    /* margin: 0 auto; */
-    font-size: 0.8em;
-    margin-left: 0.2em;
-    border-radius: 50px !important;
-    /* height: 50px; */
-    padding: 10px;
-}
-
-.shop-now-button:hover {
-    background-color: var(--roxo3-hover);
-}
 
 .highlights-section {
+    display: none !important;
     display: flex;
     justify-content: space-between;
     padding: 20px 0;

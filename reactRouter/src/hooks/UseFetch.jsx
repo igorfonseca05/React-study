@@ -30,6 +30,6 @@ export function useFetch(url) {
 
     },  [])
 
-     return {data}
+     return {data, error, loading}
 }
 
