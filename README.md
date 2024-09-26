@@ -1,8 +1,12 @@
-# React study
+# React study- Curso Udemy
+  ## Professor: Matheus Battisti
 
 Neste repositório armazeno os codigos e progressos que tenho feito no curso de
 react que tenho feito. Lembrando que essa repositório se trata de um repositório
 de revisão, pois já conclui o curso de React e me propus a revisar todo o conteúdo visto.
+
+![image](https://github.com/user-attachments/assets/418321fa-826c-400a-9455-691d0b0f20fc)
+
 
 Os conteúdos que foi abordado no curso foram:
 * Introdução
