@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
@@ -10,6 +10,9 @@ const Navbar = () => {
   const [lastScrollTop, setLastScrollTop] = useState(0)
 
   const [inputSearchOpen, setInputSearchOpen] = useState('')
+  const [hideLogoMenu, setHideLogoMenu] = useState('')
+
+  const icon_mobile = useRef('')
 
   function handleScroll() {
     const currentScrollTop = window.scrollY;
@@ -34,21 +37,28 @@ const Navbar = () => {
   function handleInputSearch(e) {
     if (e.target.tagName === 'SPAN') {
       setInputSearchOpen('open')
+      setHideLogoMenu('hide_icon')
     } else {
       setInputSearchOpen('')
+      setHideLogoMenu('')
     }
   }
 
   useEffect(() => {
     document.addEventListener('click', handleInputSearch)
+
+    return () => {
+      document.removeEventListener('click', handleInputSearch)
+    }
   }, [])
+
 
   return (
     <nav className={`navbar ${hideMenu ? 'navbar-hide' : 'navbar-show'}`}>
         <MenuMobile></MenuMobile>
       <div className="logo">
-        <img src="logo_identical.svg" alt="" />
-        <Link to={'/'} className='Link-home'>Web/Shop</Link>
+        <img src="logo_identical.svg" className={`${hideLogoMenu? 'hide_icon': ''}`} alt="" />
+        <Link to={'/'} className={`Link-home`}>Web/Shop</Link>
       </div>
       <ul className="nav-links">
         <li className="nav-item">

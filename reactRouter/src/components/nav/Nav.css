@@ -145,13 +145,13 @@
 
 .open {
   opacity: 1;
-  width:  20vw;
+  width:  250px;
   border: solid 1px var(--roxo2);
 }
 
 .input-search:focus {
   opacity: 1;
-  width: 20vw;
+  width: 250px;
   border: solid 1px var(--roxo2);
 }
 

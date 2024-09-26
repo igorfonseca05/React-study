@@ -84,19 +84,16 @@ h1 {
   /* Estilos específicos para telas pequenas */
   .navbar {
     display: flex;
-    justify-content: end;
+    /* justify-content: end; */
     width: 100%;
     max-width: 1350px !important;
     border-radius: 0px !important;
     box-shadow: none;
   }
 
-  .nav-links{
-    display: none;
-    /* width: 100%; */
-  }
 
-  .iconAndSearchMenu .nav-item, .logo img {
+
+  .iconAndSearchMenu .nav-item, .logo a, .nav-links {
     display: none;
   }
   
@@ -110,6 +107,10 @@ h1 {
     max-width: 1350px !important;
     border-radius: 0px !important;
     box-shadow: none;
+  }
+
+  .menuMobile-container {
+    display: none !important;
   }
 
   /* .input-search {
@@ -129,6 +130,10 @@ h1 {
     width: 95%;
     max-width: 1350px !important;
   }
+
+  .menuMobile-container {
+    display: none !important;
+  }
   
 
 }
@@ -139,6 +144,10 @@ h1 {
   .navbar {
     width: 90%;
     max-width: 1350px !important;
+  }
+
+  .menuMobile-container {
+    display: none !important;
   }
 }
 
@@ -155,5 +164,9 @@ h1 {
 
   .banner {
     background-color: #6336c4;
+  }
+
+  .menuMobile-container {
+    display: none !important;
   }
 }

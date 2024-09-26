@@ -64,6 +64,31 @@
     font-size: 20px;
 }
 
+.user-infos-menu{
+  list-style: none;
+  
+}
+.user-infos-menu figure img{
+  width: 50%;
+  height: 50%;
+  border-radius: 50px;
+
+}
+
+.menu-mobile-container{
+  list-style-type: none;
+}
+
+.menu-mobile-item{
+  display: flex !important;
+  align-items: center;
+  /* background-color: #9941fc; */
+}
+
+.menu-mobile-item p{
+  margin: 0px 0px 0px 8px;
+}
+
 
 /* Icon css */
 
