@@ -23,6 +23,8 @@ nav {
     justify-content: space-between;
     grid-area: navbar;
     background-color: violet;
+    width: calc(100% - 250px);
+    left: 100%;    
 }
 
 aside {
@@ -42,6 +44,7 @@ footer {
     grid-area: footer;
     background-color: rgb(75, 209, 180);
 }
+
 nav ul {
     display: flex;
     list-style: none;

@@ -17,5 +17,8 @@ export function SenhaContextProvider({ children }) {
 
 export function useSenhaContext() {
     const { senha } = useContext(SenhaContext)
+
+    if (!senha) return
+
     return senha
 }
