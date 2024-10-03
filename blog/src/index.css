@@ -1,7 +1,13 @@
 
 :root {
-    ---black: #2c2c2c;
+    ---black: #3f3e3e;
     --black_hover: #0c0c0c;
+
+    --h1: 5em;
+
+    --title: "Bai Jamjuree", sans-serif;
+
+    --marginSize: 80%;
 }
 
 *{
@@ -16,6 +22,26 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4; /* Cor de fundo */
+}
+
 .active {
     color: var(--black_hover);
+}
+
+.container {
+    width: var(--marginSize);
+    max-width: 1200px;
+    padding: 20px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    margin: 0 auto;
+}
+
+hr {
+    opacity: 0.2;
 }

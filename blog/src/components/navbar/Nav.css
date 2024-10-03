@@ -1,14 +1,20 @@
 
+header {
+    width: 100vw;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
-    padding: 10px 34px ;
+    padding: 5px 0px ;
+    width: var(--marginSize) !important;
+    margin: 0 auto;
 }
 
 .nav-container .menu_itens_container {
    display: flex;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-between;
    font-weight: 600;
    width: 20%;
    min-width: 250px;
@@ -16,7 +22,7 @@
 
 .menu_item {
     list-style: none;
-    font-size: clamp(12px, 1.6em, 24px);
+    font-size: clamp(12px, 1.4em, 2.4em);
 }
 
 a {
@@ -28,9 +34,6 @@ a {
     display: flex;
     justify-content: space-between;
     width: 225px;
+    min-width: 210px;
     /* background-color: rebeccapurple; */
-}
-
-hr {
-    opacity: 0.2;
 }
