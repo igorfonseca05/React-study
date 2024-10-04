@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Button.css'
 
+import { useContextModal } from '../../context/ModalContext'
+
 function Button({ innerText }) {
+
+    const { setOpenModal } = useContextModal()
+
     return (
         /* From Uiverse.io by thewizardofzen */
-        <button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             {innerText}
-            <div class="arrow-wrapper">
-                <div class="arrow"></div>
+            <div className="arrow-wrapper">
+                <div className="arrow"></div>
             </div>
         </button>
 

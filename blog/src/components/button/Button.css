@@ -17,6 +17,8 @@ button {
   align-items: center;
   gap: 0.6em;
   font-weight: bold;
+  padding: 8px 16px;
+  font-size: 1.2em;
 }
 
 button .arrow-wrapper {
@@ -65,12 +67,17 @@ button:first-child .arrow {
 }
 
 button:last-child {
-  background-color: var(--black);
+  background-color: orange;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: rgb(253, 124, 3);
   color: white;
 }
 
 button:last-child .arrow {
-  background: rgb(0, 0, 0) !important;
+  background: orange !important;
 }
 
 button:last-child:hover .arrow {

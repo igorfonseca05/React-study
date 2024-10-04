@@ -2,6 +2,7 @@
 :root {
     ---black: #3f3e3e;
     --black_hover: #0c0c0c;
+    --h1Color:  #3f3e3e;
 
     --h1: 5em;
 
@@ -20,6 +21,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -37,11 +39,21 @@ body {
 .container {
     width: var(--marginSize);
     max-width: 1200px;
-    padding: 20px;
+    padding: 20px 0px;
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 hr {
     opacity: 0.2;
+    padding: 0px;
+    /* margin: 2px 0px; */
+}
+
+.article-container {
+    background-color: rgb(255, 255, 255);
+    /* width: 100%; */
+    margin: 0 auto;
+    border-radius: 14px;
+    padding: 10px;
 }

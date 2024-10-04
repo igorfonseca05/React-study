@@ -3,8 +3,12 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
+import { ModalContexProvider } from './context/ModalContext.jsx'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <ModalContexProvider>
+      <App />
+    </ModalContexProvider>
   </StrictMode>,
 )
