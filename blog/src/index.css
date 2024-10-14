@@ -1,8 +1,10 @@
-
 :root {
     ---black: #3f3e3e;
     --black_hover: #0c0c0c;
-    --h1Color:  #3f3e3e;
+    --h1Color: #0f0f0f;
+    --highlight-color: orange;
+
+    --border-radius: 10px;
 
     --h1: 5em;
 
@@ -14,15 +16,15 @@
 
     /* Home Sobre mim Contato*/
     --font-weight-itens-nav: 600;
-    --menu-container-width: 20%; 
-    --menu-container-min-width: 250px; 
+    --menu-container-width: 20%;
+    --menu-container-min-width: 250px;
 
     /* Sign In Sign up */
     --Size-buttons-container: 195px;
 
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -40,7 +42,8 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #f4f4f4; /* Cor de fundo */
+    background-color: #f4f4f4;
+    /* Cor de fundo */
 }
 
 .active {
@@ -65,6 +68,6 @@ hr {
     background-color: rgb(255, 255, 255);
     /* width: 100%; */
     margin: 0 auto;
-    border-radius: 14px;
-    padding: 10px;
+    border-radius: var(--border-radius);
+    padding: 8px;
 }

@@ -10,6 +10,7 @@ function TopicsMenu() {
         <>
             <div className='wrap-container'>
                 <h1>Code Journal</h1>
+                <h4>Seu guia diário para o desenvolvimento web e banco de dados.</h4>
             </div>
             <Menu />
         </>

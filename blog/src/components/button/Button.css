@@ -1,4 +1,4 @@
-/* From Uiverse.io by thewizardofzen */ 
+/* From Uiverse.io by thewizardofzen */
 button {
   --primary-color: #ffff;
   --secondary-color: #002152;
@@ -8,7 +8,7 @@ button {
   --arrow-stroke: 2px;
   box-sizing: border-box;
   border: 0;
-  border-radius: 50px;
+  border-radius: var(--border-radius);
   color: var(--black);
   padding: 0.7em 1.5em;
   background: var(--primary-color);

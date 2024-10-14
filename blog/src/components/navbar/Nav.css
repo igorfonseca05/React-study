@@ -1,4 +1,3 @@
-
 header {
     width: 100vw;
 }
@@ -7,21 +6,21 @@ header {
     display: flex;
     justify-content: space-between;
     /* align-items: center !important; */
-    padding: 8px 0px 0px 0px ;
+    padding: 8px 0px 0px 0px;
     width: var(--marginSize) !important;
     margin: 0 auto;
 }
 
 .nav-container .menu_itens_container {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   font-weight: var(--font-weight-itens-nav);
-   width: var(--menu-container-width);
-   min-width: var(--menu-container-min-width);
-   padding: 0px;
-   margin: 0px ;
-   /* background-color: violet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: var(--font-weight-itens-nav);
+    width: var(--menu-container-width);
+    min-width: var(--menu-container-min-width);
+    padding: 0px;
+    margin: 0px;
+    /* background-color: violet; */
 }
 
 .menu_item {
