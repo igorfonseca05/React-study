@@ -16,11 +16,12 @@ header {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   font-weight: 600;
-   width: 20%;
-   min-width: 250px;
+   font-weight: var(--font-weight-itens-nav);
+   width: var(--menu-container-width);
+   min-width: var(--menu-container-min-width);
    padding: 0px;
    margin: 0px ;
+   background-color: violet;
 }
 
 .menu_item {
@@ -36,7 +37,7 @@ a {
 .button_login_container {
     display: flex;
     justify-content: space-between;
-    width: 225px;
-    min-width: 210px;
+    width: 195px;
+    min-width: 195px;
     /* background-color: rebeccapurple; */
 }

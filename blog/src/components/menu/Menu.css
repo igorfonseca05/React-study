@@ -1,18 +1,35 @@
 .menu-container {
+    /* background-color: violet; */
+    width: 100%;   
+    margin: 10px 0px
+}
+
+.menu-container ul {
     display: flex;
     justify-content: space-around;
-    /* background-color: violet; */
     width: 40%;
-    
+    padding: 0px;
+    margin: 0px;
 }
 
 .menu-container li {
     list-style: none;
     font-size: 1.2em;
-    /* background-color: orange; */
     padding: 4px 8px;
     border-radius: 50px;
+    /* background-color: tomato; */
+    /* width: 400px; */
 }
+.menu-container li a {
+    width: 100%¨!important;
+}
+
+
+.menu-container li:first-child, .menu-container li:first-child a {
+    background-color: orange;
+    color: white !important;
+}
+
 .menu-container li:hover {
     background-color: orange;
 

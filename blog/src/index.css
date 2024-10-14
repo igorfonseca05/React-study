@@ -9,6 +9,14 @@
     --title: "Bai Jamjuree", sans-serif;
 
     --marginSize: 80%;
+
+    /* Nav */
+    
+
+    /* Nav-element-1 */
+    --font-weight-itens-nav: 600;
+    --menu-container-width: 20%; 
+    --menu-container-min-width: 250px; 
 }
 
 *{
