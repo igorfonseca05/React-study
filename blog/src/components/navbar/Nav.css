@@ -1,12 +1,15 @@
 header {
+    display: flex;
+    justify-content: center;
     width: 100vw;
+    height: 48px;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     /* align-items: center !important; */
-    padding: 8px 0px 0px 0px;
+    /* padding: 8px 0px 0px 0px; */
     width: var(--marginSize) !important;
     margin: 0 auto;
 }
@@ -30,12 +33,13 @@ header {
 
 a {
     text-decoration: none;
-    color: var(---black);
+    color: var(--font-menu-color);
 }
 
 .button_login_container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: var(--Size-buttons-container);
     min-width: 195px;
     /* background-color: rebeccapurple; */

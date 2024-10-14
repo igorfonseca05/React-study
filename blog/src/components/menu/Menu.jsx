@@ -21,7 +21,7 @@ function Menu() {
                         <NavLink>Banco de dados</NavLink>
                     </li>
                 </ul>
-                {/* <hr /> */}
+                <hr />
             </div>
         </>
     )

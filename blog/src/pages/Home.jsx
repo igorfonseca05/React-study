@@ -1,15 +1,15 @@
 import React from 'react'
 
 import './Home.css'
-import TopicsMenu from '../components/TopicsMenu/TopicsMenu'
 import Titles from '../components/titleSections/Titles'
 import Menu from '../components/menu/Menu'
 import ArticleCard from '../components/articleCard/ArticleCard'
+import BlogTitle from '../components/BlogTitle/BlogTitle'
 
 function Home() {
     return (
         <>
-            <TopicsMenu />
+            <BlogTitle />
             <Titles />
             <section className='container container-home'>
                 <main className='article-container'>

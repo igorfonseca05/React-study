@@ -1,17 +1,22 @@
 .wrap-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     /* justify-content: center; */
     width: var(--marginSize);
-    margin: 0 auto;
+    margin: var(--mt) auto 0px auto;
     background-color: rgb(255, 255, 255);
     border-radius: var(--border-radius);
+    height: 18rem;
 }
 
+.title-blog-container {
+    text-align: center;
+}
 
 .wrap-container h1 {
-    padding: 20px 0px;
+    /* padding: 20px 0px 0px 0px; */
     font-size: var(--h1);
     /* background-color: violet; */
     /* width: 600px; */

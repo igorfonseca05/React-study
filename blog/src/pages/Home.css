@@ -23,7 +23,7 @@ aside {
   padding: 8px;
   /* Espaçamento interno */
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
 }
 
 .recent-post-card {

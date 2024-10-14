@@ -3,8 +3,11 @@
     --black_hover: #0c0c0c;
     --h1Color: #0f0f0f;
     --highlight-color: orange;
+    --highlight-color-hover: #FF8C00;
+    --font-menu-color: #00457C;
 
     --border-radius: 10px;
+    --mt: 10px;
 
     --h1: 5em;
 
@@ -47,7 +50,7 @@ body {
 }
 
 .active {
-    color: var(--black_hover);
+    color: var(--highlight-color);
 }
 
 .container {
@@ -59,9 +62,9 @@ body {
 }
 
 hr {
-    opacity: 0.2;
+    opacity: 0.1;
     padding: 0px;
-    /* margin: 2px 0px; */
+    margin: 0px;
 }
 
 .article-container {
