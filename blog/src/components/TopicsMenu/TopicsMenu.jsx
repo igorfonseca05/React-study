@@ -7,10 +7,14 @@ import Menu from '../menu/Menu'
 
 function TopicsMenu() {
     return (
-        <div className='wrap-container'>
-            <h1>Code Journal</h1>
+        <>
+            <div className='wrap-container'>
+                <h1>Code Journal</h1>
+            </div>
             <Menu />
-        </div>
+        </>
+
+
     )
 }
 

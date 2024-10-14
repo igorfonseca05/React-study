@@ -7,7 +7,7 @@
 .menu-container ul {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: fit-content;
     padding: 0px;
     margin: 0px;
 }
@@ -19,6 +19,7 @@
     border-radius: 50px;
     /* background-color: tomato; */
     /* width: 400px; */
+    margin: 0px 8px;
 }
 .menu-container li a {
     width: 100%¨!important;

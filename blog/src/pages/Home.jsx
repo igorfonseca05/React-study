@@ -3,6 +3,7 @@ import React from 'react'
 import './Home.css'
 import TopicsMenu from '../components/TopicsMenu/TopicsMenu'
 import Titles from '../components/titleSections/Titles'
+import Menu from '../components/menu/Menu'
 
 function Home() {
     return (
