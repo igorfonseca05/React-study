@@ -1,0 +1,24 @@
+
+
+.article-container article {
+    padding: 1.2em;
+  }
+  
+.title-post {
+    font-size: 3em;
+    color: rgb(27, 59, 129);
+    padding-top: 10px;
+  }
+  
+figure {
+    width: 100%;
+    height: 250px !important;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+figure img {
+    width: 100%;
+  }
+  

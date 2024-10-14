@@ -21,7 +21,7 @@ header {
    min-width: var(--menu-container-min-width);
    padding: 0px;
    margin: 0px ;
-   background-color: violet;
+   /* background-color: violet; */
 }
 
 .menu_item {
@@ -37,7 +37,7 @@ a {
 .button_login_container {
     display: flex;
     justify-content: space-between;
-    width: 195px;
+    width: var(--Size-buttons-container);
     min-width: 195px;
     /* background-color: rebeccapurple; */
 }

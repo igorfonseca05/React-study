@@ -6,16 +6,20 @@
 
     --h1: 5em;
 
+    --colum-gap: 10px;
+
     --title: "Bai Jamjuree", sans-serif;
 
     --marginSize: 80%;
 
-    /* Nav */
-
-    /* Nav-element-1 */
+    /* Home Sobre mim Contato*/
     --font-weight-itens-nav: 600;
     --menu-container-width: 20%; 
     --menu-container-min-width: 250px; 
+
+    /* Sign In Sign up */
+    --Size-buttons-container: 195px;
+
 }
 
 *{

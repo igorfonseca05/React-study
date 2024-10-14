@@ -5,15 +5,17 @@
     /* justify-content: center; */
     width: var(--marginSize);
     margin: 0 auto;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
 }
 
 
 .wrap-container h1 {
-    padding: 40px 0px 40px 0px;
+    padding: 20px 0px;
     font-size: var(--h1);
     /* background-color: violet; */
     /* width: 600px; */
     color: var(--h1Color);
     font-family: var(--title);
+    font-weight: 700;
 }
