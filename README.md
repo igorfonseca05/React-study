@@ -128,15 +128,151 @@ No código acima temos que
 
 ## 39. Renderização de listas
 
+Nesta aula aprendemos a rendeizar lista no react. Analise o exemplo abaixo e veja como podemos fazer:
+
+```js
+import React from "react";
+
+const ListaDeTarefas = () => {
+  const tarefas = ["Comprar leite", "Estudar React", "Fazer exercícios"];
+  const [list] = useState(tarefas);
+
+  return (
+    <div>
+      <h1>Lista de Tarefas</h1>
+      <ul>
+        {list.map((tarefa, index) => (
+          <li key={index}>{tarefa}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default ListaDeTarefas;
+```
+
+Lmbre-se, aqui usamos o `map() => ()`
+
+Neste exemplo:
+
+- Criamos um array tarefas contendo os itens a serem renderizados.
+
+- Usamos o método map() para iterar sobre o array e gerar um <li> para cada tarefa.
+
+- Cada <li> recebe uma chave (key) única, que é importante para o React identificar quais itens mudaram, foram adicionados ou removidos.
+
 ## 40. A propriedade key
+
+A propriedade **key** no React é usada para identificar de maneira única os elementos de uma lista ou coleção quando são renderizados dinamicamente. Isso ajuda o React a otimizar a atualização da interface, mantendo o desempenho ao lidar com mudanças de listas, como adição, remoção ou reordenação de itens.
 
 ## 41. Previous state
 
+É um recurso do react que nos permite ter acesso ao estado anterior de determinada variavel antes de atualiza-lá. No exemplo abaixo temos um hook que implementa uma função de atualização de estado, `incrementar`, para obter acesso ao estado anterior de `count`
+
+```js
+import React, { useState } from "react";
+
+const Contador = () => {
+  const [count, setCount] = useState(0);
+
+  const incrementar = () => {
+    setCount((prevCount) => prevCount + 1);
+  };
+
+  return (
+    <div>
+      <p>Contagem: {count}</p>
+      <button onClick={incrementar}>Incrementar</button>
+    </div>
+  );
+};
+
+export default Contador;
+```
+
 ## 42. Renderização condicional
+
+O operador lógico AND(&&) pode ser usado para renderizar um componente ou conteúdo apenas quando uma condição for verdadeira. Quando a condição for falsa, nada será renderizado
+
+```js
+import React, { useState } from "react";
+
+const App = () => {
+  const [logado, setLogado] = useState(false);
+
+  return (
+    <div>
+      <h1>Conteúdo da Página</h1>
+      {logado && <p>Você está logado!</p>} {/* Só renderiza o parágrafo se logado for true */}
+      <button onClick={() => setLogado(!logado)}>Alterar Status</button>
+    </div>
+  );
+};
+
+export default App;
+```
 
 ## 43. if e else no JSX
 
+O operador ternário `(condição ? valor_se_verdadeiro : valor_se_falso)` é uma forma compacta de realizar renderização condicional. Ele pode ser usado diretamente no JSX.
+
+```js
+import React, { useState } from "react";
+
+const App = () => {
+  const [logado, setLogado] = useState(false);
+
+  return (
+    <div>
+      {logado ? <h1>Bem-vindo de volta!</h1> : <h1>Por favor, faça login.</h1>}
+      <button onClick={() => setLogado(!logado)}>Alterar Status</button>
+    </div>
+  );
+};
+
+export default App;
+```
+
 ## 44. Introdução às props
+
+As props é outro recurso fundamental do react, pois nos permite criar um fluxo de dados, uma vez que props são valores que passamos do componente pai para o seu componente filho. Esse tipo recurso é útil para o caso de estarmos carregando dados do banco, por exemplo. As props são enviadas como um objeto passado no argumento da função do componente filho. Vejamos um exemplo básico:
+
+```js
+import React from "react";
+
+// Componente filho
+const Saudacao = (props) => {
+  return <h1>Olá, {props.nome}!</h1>;
+};
+
+// Componente pai
+const App = () => {
+  return <Saudacao nome="Igor" />;
+};
+
+export default App;
+```
+
+No exemplo acima, o componente `Saudação` é importado dentro do componente pai `App`, e para ele é passado a props `nome="Igor" ` que é recebida como `props` no argumento do componente e mostrado dentro dele usando a notação de ponto. Ao invés de usar o `props` no argumento da função, pedemos desestruturar o dado que está sendo enviado, ou seja:
+
+```js
+import React from "react";
+
+// Componente filho
+const Saudacao = ({ nome }) => {
+  return <h1>Olá, {nome}!</h1>;
+};
+
+// Componente pai
+const App = () => {
+  return <Saudacao nome="Igor" />;
+};
+
+export default App;
+```
+
+agora dentro do componente usamos o `{nome}` ao invés de `props`.
 
 ## 45. Destructuring em props
 
