@@ -10,10 +10,10 @@
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
-    'navbar navbar'
-    'aside main'
-    'footer footer';
+    grid-template-areas:
+        'navbar navbar'
+        'aside main'
+        'footer footer';
 }
 
 nav {
@@ -23,8 +23,8 @@ nav {
     justify-content: space-between;
     grid-area: navbar;
     background-color: violet;
-    width: calc(100% - 250px);
-    left: 100%;    
+    width: 100%;
+    left: 100%;
 }
 
 aside {
@@ -37,7 +37,7 @@ aside {
 }
 
 main {
-    grid-area: main;   
+    grid-area: main;
 }
 
 footer {
@@ -49,6 +49,7 @@ nav ul {
     display: flex;
     list-style: none;
 }
+
 nav ul li {
     list-style: none;
 }
@@ -69,4 +70,4 @@ nav ul li {
         width: 250px;
         transform: translateX(-250px);
     }
-}   
+}

@@ -1,10 +1,4 @@
-# React study- Curso Udemy
-
-## Professor: Matheus Battisti
-
 ![alt text](imgs/React-capa.png)
-
-# Resumo sobre React
 
 **O que é o React?**
 
@@ -54,6 +48,109 @@ O React utiliza um conceito chamado **DOM virtual**, que é uma representação 
 | Seção 19  | Conclusão e próximos passos         | Resumo do curso e sugestões de como continuar o aprendizado e aplicar os conhecimentos adquiridos.      |
 
 # Minhas notas de react
+
+# Seção 3 - Avançando com React
+
+## 35. Imagens públicas no React
+
+Vamos aprender como trabalhar com imagens publicas dentro do react. Para isso adicionei a imagem que voce quer adicionar ao seu projeto e adicione na pasta `public`. O código abaixo mostra como podemos fazer isso
+
+```js
+function App() {
+    return {
+        <div>
+            <div> <img scr='/nomeDoArquivo.jpg'> </img> </div>
+        </div>
+    }
+}
+```
+
+## 36. Imagens em src
+
+Vamos aprender a como carregar imagens da pasta `assets` dentro de `src`:
+
+```js
+
+// O nome dado a imagem tem que ser em maiscula
+import MyImg from './assets/nomeDoArquivo.jpg'
+
+function App() {
+    return {
+        <div>
+            <div> <img src= {MyImg}> </img> </div>
+        </div>
+    }
+}
+```
+
+## 37. O que são hooks?
+
+Um hook no React é uma função especial que permite usar recursos como estado e efeitos colaterais em componentes funcionais.
+
+Os hooks mais comuns são:
+
+- **useState** → Gerencia o estado local do componente.
+
+- **useEffect** → Executa efeitos colaterais (ex.: requisições, manipulação do DOM).
+
+- **useContext** → Acessa valores do contexto sem precisar de props.
+
+Eles seguem regras específicas, como só serem chamados no topo do componente e nunca dentro de loops ou condicionais. Além disso podemos cria-los e nesse caso os chamamos de `custom hook`
+
+## 38. useState na prática
+
+Vejamos como usar o useState
+
+```js
+import { useState } from "react";
+
+function Contador() {
+  const [contador, setContador] = useState(0); // Estado inicial = 0
+
+  return (
+    <div>
+      <p>Valor: {contador}</p>
+      <button onClick={() => setContador(contador + 1)}>Incrementar</button>
+    </div>
+  );
+}
+
+export default Contador;
+```
+
+No código acima temos que
+
+1. `useState(0)` → Cria um estado contador com valor inicial 0.
+
+2. `setContador` → Atualiza o estado.
+
+3. Quando o botão é clicado, `setContador(contador + 1)` incrementa o valor e o componente **re-renderiza** com o novo estado. 🚀
+
+## 39. Renderização de listas
+
+## 40. A propriedade key
+
+## 41. Previous state
+
+## 42. Renderização condicional
+
+## 43. if e else no JSX
+
+## 44. Introdução às props
+
+## 45. Destructuring em props
+
+## 46. Reaproveitamento de componentes
+
+## 47. Renderização de lista em componente
+
+## 48. Fragments
+
+## 49. A prop children
+
+## 50. Função como prop
+
+## 51. State lift
 
 ---
 
