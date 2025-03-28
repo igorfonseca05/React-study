@@ -32,11 +32,25 @@ function Home() {
         idade: 29
     }
 
+    var IDADE2 = 2
+
+    const nomes = ['igor', 'andre', 'Carlos']
+
+    const novo = nomes.splice(2, 1, 'rosa')
+    console.log(novo, nomes)
+
+    const test = 20 + "2" + IDADE2
+
+    // console.log(typeof (test), test)
+    // console.log("20" + "2")
+    // console.log("20 + 2")
+
+
     return (
         <div className='site'>
             <nav className='item'>
                 <h3>NavBar</h3>
-                <ul>
+                <ul className='list'>
                     <li>Home</li>
                     <li>About</li>
                     <li>Contact</li>
